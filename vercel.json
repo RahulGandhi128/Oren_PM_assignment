@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/index.py": {
+      "excludeFiles": "{node_modules/**,.next/**,src/**,public/**,.venv/**,.venv-pipeline/**,backend/pipeline/**,backend/tests/**,backend/data/source/geo/**,backend/data/source/openmeteo_climate/**}"
+    }
+  }
+}

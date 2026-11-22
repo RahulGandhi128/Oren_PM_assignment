@@ -1,0 +1,1 @@
+{"request": "https://api.climatetrace.org/v7/sources?year=2024&gas=co2e_100yr&subsectors=cement&gadmId=IND&limit=2", "fetched_at": "2026-11-21T11:35:46Z", "purpose": "Example response for the developer Data page (v2 source). Not used in v1."}

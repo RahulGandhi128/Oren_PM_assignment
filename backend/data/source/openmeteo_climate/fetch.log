@@ -1,0 +1,29 @@
+P01 Chittorgarh: already saved, skipping
+P02 Satna: fetching 1950-01-01..2050-12-31, 7 models
+  saved P02.json.gz (3010 KB raw), cost 3689.0
+P03 Chandrapur: fetching 1950-01-01..2050-12-31, 7 models
+  rate limited ('Minutely API request limit exceeded. Please try again in one minute.'); waiting 65s
+  saved P03.json.gz (3012 KB raw), cost 3689.0
+P04 Nalgonda: fetching 1950-01-01..2050-12-31, 7 models
+  rate limited ('Hourly API request limit exceeded. Please try again in the next hour.'); waiting 1383s
+  saved P04.json.gz (3004 KB raw), cost 3689.0
+P05 Ariyalur: fetching 1950-01-01..2050-12-31, 7 models
+  rate limited ('Minutely API request limit exceeded. Please try again in one minute.'); waiting 65s
+  saved P05.json.gz (3005 KB raw), cost 3689.0
+P06 Baloda Bazar: fetching 1950-01-01..2050-12-31, 7 models
+Daily API limit reached (Daily API request limit exceeded. Please try again tomorrow.). Saved so far is kept; run again tomorrow to continue.
+
+[exited with code 0]
+P06 Baloda Bazar: fetching 1950-01-01..2050-12-31, 7 models
+  saved P06.json.gz (3018 KB raw), cost 3689.0
+P07 Mundra: fetching 1950-01-01..2050-12-31, 7 models
+Daily API limit reached (Daily API request limit exceeded. Please try again tomorrow.). Saved so far is kept; run again tomorrow to continue.
+P07 Mundra: fetching 1950-01-01..2050-12-31, 7 models
+  saved P07.json.gz (2998 KB raw), cost 3689.0
+P08 Paradip: fetching 1950-01-01..2050-12-31, 7 models
+  rate limited ('Minutely API request limit exceeded. Please try again in one minute.'); waiting 65s
+  saved P08.json.gz (3018 KB raw), cost 3689.0
+P09 Durgapur: fetching 1950-01-01..2050-12-31, 7 models
+  rate limited ('Hourly API request limit exceeded. Please try again in the next hour.'); waiting 1556s
+  saved P09.json.gz (3016 KB raw), cost 3689.0
+All requested plants saved.

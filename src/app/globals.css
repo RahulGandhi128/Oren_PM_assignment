@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+/* Every value below is a reference to a --hz-* variable generated from
+   src/theme/tokens.ts (see generate-css.ts). No literal visual values here. */
+@theme inline {
+  --color-*: initial;
+  --color-bg: var(--hz-color-bg);
+  --color-surface: var(--hz-color-surface);
+  --color-surface2: var(--hz-color-surface2);
+  --color-ink: var(--hz-color-ink);
+  --color-ink2: var(--hz-color-ink2);
+  --color-muted: var(--hz-color-muted);
+  --color-border: var(--hz-color-border);
+  --color-border-strong: var(--hz-color-border-strong);
+  --color-scrim: var(--hz-color-scrim);
+  --color-accent: var(--hz-color-accent);
+  --color-accent-soft: var(--hz-color-accent-soft);
+  --color-focus: var(--hz-color-focus-ring);
+  --color-risk-low: var(--hz-color-risk-low);
+  --color-risk-moderate: var(--hz-color-risk-moderate);
+  --color-risk-high: var(--hz-color-risk-high);
+  --color-risk-severe: var(--hz-color-risk-severe);
+  --color-risk-critical: var(--hz-color-risk-critical);
+  --color-hazard-heat: var(--hz-color-hazard-heat);
+  --color-hazard-water: var(--hz-color-hazard-water);
+  --color-hazard-flood: var(--hz-color-hazard-flood);
+  --color-hazard-coastal: var(--hz-color-hazard-coastal);
+  --color-prov-data: var(--hz-color-prov-data);
+  --color-prov-derived: var(--hz-color-prov-derived);
+  --color-prov-assumption: var(--hz-color-prov-assumption);
+  --color-prov-placeholder: var(--hz-color-prov-placeholder);
+  --color-quality-info: var(--hz-color-quality-info);
+  --color-quality-warning: var(--hz-color-quality-warning);
+  --color-quality-danger: var(--hz-color-quality-danger);
+  --color-quality-warning-soft: var(--hz-color-quality-warning-soft);
+  --color-quality-danger-soft: var(--hz-color-quality-danger-soft);
+  --color-series-sand: var(--hz-color-series-sand);
+  --color-series-aqua: var(--hz-color-series-aqua);
+  --color-series-mint: var(--hz-color-series-mint);
+  --color-series-slate: var(--hz-color-series-slate);
+  --color-series-yellow: var(--hz-color-series-yellow);
+  --color-series-blue: var(--hz-color-series-blue);
+  --color-series-teal: var(--hz-color-series-teal);
+  --color-series-burnt: var(--hz-color-series-burnt);
+  --color-series-pink: var(--hz-color-series-pink);
+  --color-series-steel: var(--hz-color-series-steel);
+  --color-delta-up-bg: var(--hz-color-delta-up-bg);
+  --color-delta-up-border: var(--hz-color-delta-up-border);
+  --color-delta-up-text: var(--hz-color-delta-up-text);
+  --color-delta-down-bg: var(--hz-color-delta-down-bg);
+  --color-delta-down-border: var(--hz-color-delta-down-border);
+  --color-delta-down-text: var(--hz-color-delta-down-text);
+  --color-chart-today: var(--hz-color-chart-today);
+  --color-chart-low: var(--hz-color-chart-low);
+  --color-chart-high: var(--hz-color-chart-high);
+  --color-chart-future: var(--hz-color-chart-future);
+  --color-chart-grid: var(--hz-color-chart-grid);
+  --color-chart-axis: var(--hz-color-chart-axis);
+
+  --font-*: initial;
+  --font-display: var(--hz-font-display);
+  --font-sans: var(--hz-font-sans);
+  --font-mono: var(--hz-font-mono);
+  --font-serif: var(--hz-font-serif);
+
+  --text-*: initial;
+  --text-serif: var(--hz-text-serif);
+  --text-serif--line-height: var(--hz-leading-serif);
+  --text-serif--letter-spacing: var(--hz-tracking-serif);
+  --text-hero: var(--hz-text-hero);
+  --text-hero--line-height: var(--hz-leading-hero);
+  --text-hero--letter-spacing: var(--hz-tracking-hero);
+  --text-h1: var(--hz-text-h1);
+  --text-h1--line-height: var(--hz-leading-h1);
+  --text-h1--letter-spacing: var(--hz-tracking-h1);
+  --text-h2: var(--hz-text-h2);
+  --text-h2--line-height: var(--hz-leading-h2);
+  --text-h2--letter-spacing: var(--hz-tracking-h2);
+  --text-h3: var(--hz-text-h3);
+  --text-h3--line-height: var(--hz-leading-h3);
+  --text-h3--letter-spacing: var(--hz-tracking-h3);
+  --text-body: var(--hz-text-body);
+  --text-body--line-height: var(--hz-leading-body);
+  --text-body--letter-spacing: var(--hz-tracking-body);
+  --text-small: var(--hz-text-small);
+  --text-small--line-height: var(--hz-leading-small);
+  --text-small--letter-spacing: var(--hz-tracking-small);
+  --text-micro: var(--hz-text-micro);
+  --text-micro--line-height: var(--hz-leading-micro);
+  --text-micro--letter-spacing: var(--hz-tracking-micro);
+  --text-figure: var(--hz-text-figure);
+  --text-figure--line-height: var(--hz-leading-figure);
+  --text-figure--letter-spacing: var(--hz-tracking-figure);
+
+  --spacing-*: initial;
+  --spacing-0: var(--hz-space-0);
+  --spacing-1: var(--hz-space-1);
+  --spacing-2: var(--hz-space-2);
+  --spacing-3: var(--hz-space-3);
+  --spacing-4: var(--hz-space-4);
+  --spacing-5: var(--hz-space-5);
+  --spacing-6: var(--hz-space-6);
+  --spacing-7: var(--hz-space-7);
+  --spacing-8: var(--hz-space-8);
+  --spacing-9: var(--hz-space-9);
+  --spacing-topbar: var(--hz-layout-top-bar-height);
+  --spacing-rail: var(--hz-layout-rail-width);
+  --spacing-gutter: var(--hz-layout-gutter);
+
+  --container-page: var(--hz-layout-max-width);
+
+  --radius-*: initial;
+  --radius-sm: var(--hz-radius-sm);
+  --radius-md: var(--hz-radius-md);
+  --radius-lg: var(--hz-radius-lg);
+  --radius-pill: var(--hz-radius-pill);
+
+  --shadow-*: initial;
+  --shadow-card: var(--hz-shadow-card);
+  --shadow-lift: var(--hz-shadow-lift);
+  --shadow-spotlight: var(--hz-shadow-spotlight);
+
+  --ease-*: initial;
+  --ease-standard: var(--hz-ease);
+  --default-transition-duration: var(--hz-motion-base);
+  --default-transition-timing-function: var(--hz-ease);
+}
+
+@layer base {
+  html {
+    background: var(--hz-color-bg);
+    color: var(--hz-color-ink);
+    font-family: var(--hz-font-sans);
+    font-size: 100%;
+  }
+  body {
+    font-size: var(--hz-text-body);
+    line-height: var(--hz-leading-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Display text: same family as body (Inter), set apart by weight. Utilities can still override. */
+  h1, h2, h3 { font-weight: var(--hz-font-weight-heading); }
+  .font-display { font-weight: var(--hz-font-weight-display); }
+  .font-serif { font-weight: var(--hz-font-weight-serif); }
+  :focus-visible {
+    outline: 2px solid var(--hz-color-focus-ring);
+    outline-offset: 2px;
+  }
+}
+
+@utility tabular {
+  font-feature-settings: var(--hz-font-numeric);
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+@utility hairline {
+  border-color: var(--hz-color-border);
+}
+
+/* Report: hidden on screen; when requested from the ⋯ menu, it is the only thing printed. */
+#board-pack { display: none; }
+
+@media print {
+  @page { size: A4; margin: 15mm; }
+  body.print-board-pack > *:not(#board-pack) { display: none !important; }
+  body.print-board-pack #board-pack { display: block; }
+  .no-print { display: none !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body { background: var(--hz-color-surface); }
+}
+
+@utility paint-stroke {
+  paint-order: stroke;
+}
+
+/* Placeholder provenance chip: striped red (spec §9.3). */
+@utility prov-striped {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 var(--hz-space-1),
+    color-mix(in srgb, var(--hz-color-prov-placeholder) 18%, transparent) var(--hz-space-1) var(--hz-space-2)
+  );
+}
+
+/* Clinker flow: subtle animated dash when its plant is hovered. */
+.flow-line-active {
+  stroke-dasharray: 6 4;
+  animation: flow-dash 1.2s linear infinite;
+}
+@keyframes flow-dash {
+  to { stroke-dashoffset: -20; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-line-active { animation: none; }
+}
+
+/* Issues page: highlight the card a link points to (#ISSUE-ID). */
+.issue-card:target {
+  outline: 2px solid var(--hz-color-accent);
+  outline-offset: 2px;
+}

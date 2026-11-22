@@ -1,0 +1,5535 @@
+{
+ "generated_at": "2026-11-21T11:00:42Z",
+ "source": "openmeteo_climate",
+ "windows": {
+  "today": [
+   2001,
+   2020
+  ],
+  "2040": [
+   2031,
+   2050
+  ]
+ },
+ "heat_threshold_c": 40.0,
+ "method": "Per model: annual count of days with temperature_2m_max >= 40 C and annual max daily precipitation (Rx1day); mean over each 20-year window; ensemble median across models. Model-years with missing days are excluded. No bias correction. Today and 2040 both come from the same models (model-to-model change).",
+ "plants": {
+  "P01": {
+   "grid": {
+    "latitude": 24.900002,
+    "longitude": 74.600006,
+    "elevation_m": 402.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 39.25,
+      "EC_Earth3P_HR": 45.75,
+      "FGOALS_f3_H": 26.25,
+      "HiRAM_SIT_HR": 46.7,
+      "MPI_ESM1_2_XR": 47.4,
+      "MRI_AGCM3_2_S": 66.75,
+      "NICAM16_8S": 35.3
+     },
+     "ensemble": {
+      "median": 45.75,
+      "min": 26.25,
+      "max": 66.75,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 45.2,
+      "EC_Earth3P_HR": 49.68,
+      "FGOALS_f3_H": 43.5,
+      "HiRAM_SIT_HR": 61.6,
+      "MPI_ESM1_2_XR": 54.35,
+      "MRI_AGCM3_2_S": 66.65,
+      "NICAM16_8S": 37.05
+     },
+     "ensemble": {
+      "median": 49.68,
+      "min": 37.05,
+      "max": 66.65,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 94.15,
+      "EC_Earth3P_HR": 41.7,
+      "FGOALS_f3_H": 208.57,
+      "HiRAM_SIT_HR": 139.66,
+      "MPI_ESM1_2_XR": 26.66,
+      "MRI_AGCM3_2_S": 77.72,
+      "NICAM16_8S": 119.62
+     },
+     "ensemble": {
+      "median": 94.15,
+      "min": 26.66,
+      "max": 208.57,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 86.67,
+      "EC_Earth3P_HR": 38.0,
+      "FGOALS_f3_H": 263.55,
+      "HiRAM_SIT_HR": 135.62,
+      "MPI_ESM1_2_XR": 28.26,
+      "MRI_AGCM3_2_S": 79.65,
+      "NICAM16_8S": 137.07
+     },
+     "ensemble": {
+      "median": 86.67,
+      "min": 28.26,
+      "max": 263.55,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": -7.94,
+     "EC_Earth3P_HR": -8.87,
+     "FGOALS_f3_H": 26.36,
+     "HiRAM_SIT_HR": -2.89,
+     "MPI_ESM1_2_XR": 6.0,
+     "MRI_AGCM3_2_S": 2.49,
+     "NICAM16_8S": 14.58
+    },
+    "ensemble": {
+     "median": 2.49,
+     "min": -8.87,
+     "max": 26.36,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 36.0,
+     "min": 7.0,
+     "max": 39.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 42.0,
+     "min": 2.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 27.0,
+     "min": 1.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 33.0,
+     "min": 14.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 45.0,
+     "min": 18.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 34.0,
+     "min": 19.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 34.0,
+     "min": 18.0,
+     "max": 39.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 36.0,
+     "min": 24.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 43.0,
+     "min": 19.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 32.0,
+     "min": 24.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 29.0,
+     "min": 19.0,
+     "max": 45.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 29.0,
+     "min": 9.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 25.0,
+     "min": 6.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 30.0,
+     "min": 16.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 42.0,
+     "min": 17.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 35.0,
+     "min": 18.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 35.0,
+     "min": 7.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 50.0,
+     "min": 14.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 44.0,
+     "min": 8.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 43.0,
+     "min": 33.0,
+     "max": 64.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 33.0,
+     "min": 16.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 57.0,
+     "min": 22.0,
+     "max": 111.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 53.0,
+     "min": 29.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 51.0,
+     "min": 9.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 39.0,
+     "min": 20.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 45.0,
+     "min": 24.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 42.0,
+     "min": 24.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 42.0,
+     "min": 29.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 22.0,
+     "min": 13.0,
+     "max": 64.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 48.0,
+     "min": 20.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 42.0,
+     "min": 20.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 32.0,
+     "min": 7.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 42.0,
+     "min": 25.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 49.0,
+     "min": 21.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 42.0,
+     "min": 16.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 44.0,
+     "min": 18.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 39.0,
+     "min": 30.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 39.0,
+     "min": 25.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 39.0,
+     "min": 27.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 56.0,
+     "min": 37.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 43.0,
+     "min": 22.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 35.0,
+     "min": 16.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 29.0,
+     "min": 18.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 56.0,
+     "min": 29.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 57.0,
+     "min": 19.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 47.0,
+     "min": 23.0,
+     "max": 75.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 48.0,
+     "min": 8.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 40.0,
+     "min": 26.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 43.0,
+     "min": 19.0,
+     "max": 79.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 38.0,
+     "min": 23.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 32.0,
+     "min": 24.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 52.0,
+     "min": 29.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 38.0,
+     "min": 15.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 43.0,
+     "min": 16.0,
+     "max": 110.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 42.0,
+     "min": 25.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 55.0,
+     "min": 14.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 50.0,
+     "min": 31.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 52.0,
+     "min": 27.0,
+     "max": 76.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 56.0,
+     "min": 38.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 51.0,
+     "min": 32.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 51.0,
+     "min": 36.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 55.0,
+     "min": 36.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 51.0,
+     "min": 30.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 59.0,
+     "min": 50.0,
+     "max": 64.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 55.0,
+     "min": 31.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 46.0,
+     "min": 21.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 49.0,
+     "min": 29.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 48.0,
+     "min": 32.0,
+     "max": 90.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 58.0,
+     "min": 22.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 60.0,
+     "min": 43.0,
+     "max": 83.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 57.0,
+     "min": 48.0,
+     "max": 90.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P02": {
+   "grid": {
+    "latitude": 24.599998,
+    "longitude": 80.80002,
+    "elevation_m": 323.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 44.85,
+      "EC_Earth3P_HR": 45.55,
+      "FGOALS_f3_H": 31.35,
+      "HiRAM_SIT_HR": 56.85,
+      "MPI_ESM1_2_XR": 44.1,
+      "MRI_AGCM3_2_S": 60.8,
+      "NICAM16_8S": 43.05
+     },
+     "ensemble": {
+      "median": 44.85,
+      "min": 31.35,
+      "max": 60.8,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 47.75,
+      "EC_Earth3P_HR": 47.11,
+      "FGOALS_f3_H": 52.1,
+      "HiRAM_SIT_HR": 68.3,
+      "MPI_ESM1_2_XR": 42.35,
+      "MRI_AGCM3_2_S": 62.35,
+      "NICAM16_8S": 47.7
+     },
+     "ensemble": {
+      "median": 47.75,
+      "min": 42.35,
+      "max": 68.3,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 99.48,
+      "EC_Earth3P_HR": 44.17,
+      "FGOALS_f3_H": 253.56,
+      "HiRAM_SIT_HR": 151.21,
+      "MPI_ESM1_2_XR": 38.57,
+      "MRI_AGCM3_2_S": 88.3,
+      "NICAM16_8S": 184.62
+     },
+     "ensemble": {
+      "median": 99.48,
+      "min": 38.57,
+      "max": 253.56,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 184.57,
+      "EC_Earth3P_HR": 44.69,
+      "FGOALS_f3_H": 500.51,
+      "HiRAM_SIT_HR": 159.03,
+      "MPI_ESM1_2_XR": 34.42,
+      "MRI_AGCM3_2_S": 81.54,
+      "NICAM16_8S": 224.14
+     },
+     "ensemble": {
+      "median": 159.03,
+      "min": 34.42,
+      "max": 500.51,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": 85.54,
+     "EC_Earth3P_HR": 1.17,
+     "FGOALS_f3_H": 97.39,
+     "HiRAM_SIT_HR": 5.17,
+     "MPI_ESM1_2_XR": -10.78,
+     "MRI_AGCM3_2_S": -7.65,
+     "NICAM16_8S": 21.4
+    },
+    "ensemble": {
+     "median": 5.17,
+     "min": -10.78,
+     "max": 97.39,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 35.0,
+     "min": 13.0,
+     "max": 53.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 37.0,
+     "min": 9.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 35.0,
+     "min": 6.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 37.0,
+     "min": 12.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 51.0,
+     "min": 29.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 37.0,
+     "min": 19.0,
+     "max": 52.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 43.0,
+     "min": 18.0,
+     "max": 53.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 53.0,
+     "min": 27.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 44.0,
+     "min": 18.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 43.0,
+     "min": 28.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 34.0,
+     "min": 25.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 33.0,
+     "min": 21.0,
+     "max": 46.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 32.0,
+     "min": 3.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 39.0,
+     "min": 21.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 42.0,
+     "min": 13.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 39.0,
+     "min": 18.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 49.0,
+     "min": 30.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 58.0,
+     "min": 20.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 41.0,
+     "min": 17.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 45.0,
+     "min": 32.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 43.0,
+     "min": 18.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 61.0,
+     "min": 29.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 49.0,
+     "min": 38.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 56.0,
+     "min": 9.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 42.0,
+     "min": 20.0,
+     "max": 52.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 45.0,
+     "min": 19.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 49.0,
+     "min": 29.0,
+     "max": 87.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 44.0,
+     "min": 34.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 30.0,
+     "min": 13.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 52.0,
+     "min": 22.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 47.0,
+     "min": 22.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 39.0,
+     "min": 19.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 47.0,
+     "min": 32.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 52.0,
+     "min": 17.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 42.0,
+     "min": 31.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 45.0,
+     "min": 21.0,
+     "max": 75.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 47.0,
+     "min": 26.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 46.0,
+     "min": 33.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 48.0,
+     "min": 27.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 60.0,
+     "min": 46.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 53.0,
+     "min": 15.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 36.0,
+     "min": 12.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 34.0,
+     "min": 17.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 49.0,
+     "min": 31.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 44.0,
+     "min": 17.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 39.0,
+     "min": 24.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 41.0,
+     "min": 21.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 44.0,
+     "min": 22.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 42.0,
+     "min": 20.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 37.0,
+     "min": 26.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 35.0,
+     "min": 24.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 44.0,
+     "min": 27.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 35.0,
+     "min": 28.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 49.0,
+     "min": 33.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 39.0,
+     "min": 12.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 65.0,
+     "min": 46.0,
+     "max": 83.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 50.0,
+     "min": 34.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 58.0,
+     "min": 41.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 55.0,
+     "min": 31.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 48.0,
+     "min": 21.0,
+     "max": 76.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 57.0,
+     "min": 22.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 54.0,
+     "min": 30.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 41.0,
+     "min": 33.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 50.0,
+     "min": 43.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 48.0,
+     "min": 17.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 53.0,
+     "min": 46.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 50.0,
+     "min": 30.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 54.0,
+     "min": 33.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 65.0,
+     "min": 47.0,
+     "max": 86.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 59.0,
+     "min": 48.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 67.5,
+     "min": 49.0,
+     "max": 104.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P03": {
+   "grid": {
+    "latitude": 20.0,
+    "longitude": 79.30002,
+    "elevation_m": 196.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 52.2,
+      "EC_Earth3P_HR": 66.05,
+      "FGOALS_f3_H": 52.65,
+      "HiRAM_SIT_HR": 71.95,
+      "MPI_ESM1_2_XR": 53.4,
+      "MRI_AGCM3_2_S": 72.6,
+      "NICAM16_8S": 52.15
+     },
+     "ensemble": {
+      "median": 53.4,
+      "min": 52.15,
+      "max": 72.6,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 57.4,
+      "EC_Earth3P_HR": 63.16,
+      "FGOALS_f3_H": 66.6,
+      "HiRAM_SIT_HR": 83.4,
+      "MPI_ESM1_2_XR": 35.85,
+      "MRI_AGCM3_2_S": 74.65,
+      "NICAM16_8S": 69.2
+     },
+     "ensemble": {
+      "median": 66.6,
+      "min": 35.85,
+      "max": 83.4,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 116.21,
+      "EC_Earth3P_HR": 59.61,
+      "FGOALS_f3_H": 324.16,
+      "HiRAM_SIT_HR": 134.8,
+      "MPI_ESM1_2_XR": 45.33,
+      "MRI_AGCM3_2_S": 150.48,
+      "NICAM16_8S": 183.18
+     },
+     "ensemble": {
+      "median": 134.8,
+      "min": 45.33,
+      "max": 324.16,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 114.33,
+      "EC_Earth3P_HR": 64.1,
+      "FGOALS_f3_H": 343.9,
+      "HiRAM_SIT_HR": 182.89,
+      "MPI_ESM1_2_XR": 60.46,
+      "MRI_AGCM3_2_S": 215.52,
+      "NICAM16_8S": 181.35
+     },
+     "ensemble": {
+      "median": 181.35,
+      "min": 60.46,
+      "max": 343.9,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": -1.62,
+     "EC_Earth3P_HR": 7.53,
+     "FGOALS_f3_H": 6.09,
+     "HiRAM_SIT_HR": 35.67,
+     "MPI_ESM1_2_XR": 33.38,
+     "MRI_AGCM3_2_S": 43.22,
+     "NICAM16_8S": -1.0
+    },
+    "ensemble": {
+     "median": 7.53,
+     "min": -1.62,
+     "max": 43.22,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 38.0,
+     "min": 30.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 61.0,
+     "min": 42.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 72.0,
+     "min": 33.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 54.0,
+     "min": 31.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 59.0,
+     "min": 39.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 52.0,
+     "min": 26.0,
+     "max": 64.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 59.0,
+     "min": 21.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 63.0,
+     "min": 19.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 61.0,
+     "min": 48.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 62.0,
+     "min": 32.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 52.0,
+     "min": 44.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 47.0,
+     "min": 24.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 44.0,
+     "min": 12.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 52.0,
+     "min": 36.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 53.0,
+     "min": 30.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 53.0,
+     "min": 24.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 65.0,
+     "min": 43.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 59.0,
+     "min": 31.0,
+     "max": 75.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 58.0,
+     "min": 45.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 60.0,
+     "min": 36.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 73.0,
+     "min": 44.0,
+     "max": 100.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 61.0,
+     "min": 40.0,
+     "max": 95.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 83.0,
+     "min": 56.0,
+     "max": 112.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 62.0,
+     "min": 33.0,
+     "max": 91.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 53.0,
+     "min": 13.0,
+     "max": 88.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 55.0,
+     "min": 23.0,
+     "max": 76.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 63.0,
+     "min": 57.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 62.0,
+     "min": 48.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 48.0,
+     "min": 16.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 57.0,
+     "min": 30.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 67.0,
+     "min": 33.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 52.0,
+     "min": 16.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 71.0,
+     "min": 52.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 70.0,
+     "min": 40.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 63.0,
+     "min": 41.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 58.0,
+     "min": 28.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 57.0,
+     "min": 27.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 62.0,
+     "min": 51.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 67.0,
+     "min": 38.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 82.0,
+     "min": 27.0,
+     "max": 91.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 66.0,
+     "min": 26.0,
+     "max": 86.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 61.0,
+     "min": 34.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 57.0,
+     "min": 16.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 68.0,
+     "min": 41.0,
+     "max": 87.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 51.0,
+     "min": 37.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 64.0,
+     "min": 38.0,
+     "max": 96.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 65.0,
+     "min": 42.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 51.0,
+     "min": 26.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 64.0,
+     "min": 37.0,
+     "max": 86.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 54.0,
+     "min": 42.0,
+     "max": 90.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 48.0,
+     "min": 11.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 73.0,
+     "min": 28.0,
+     "max": 106.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 58.0,
+     "min": 0.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 67.0,
+     "min": 18.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 46.0,
+     "min": 28.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 69.0,
+     "min": 33.0,
+     "max": 101.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 59.0,
+     "min": 31.0,
+     "max": 92.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 64.0,
+     "min": 43.0,
+     "max": 99.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 82.0,
+     "min": 48.0,
+     "max": 99.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 52.0,
+     "min": 20.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 69.0,
+     "min": 25.0,
+     "max": 90.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 57.0,
+     "min": 14.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 56.0,
+     "min": 43.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 61.0,
+     "min": 44.0,
+     "max": 86.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 62.0,
+     "min": 11.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 71.0,
+     "min": 55.0,
+     "max": 97.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 55.0,
+     "min": 5.0,
+     "max": 96.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 64.0,
+     "min": 27.0,
+     "max": 100.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 86.0,
+     "min": 69.0,
+     "max": 133.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 74.0,
+     "min": 37.0,
+     "max": 99.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 76.5,
+     "min": 56.0,
+     "max": 107.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P04": {
+   "grid": {
+    "latitude": 17.099998,
+    "longitude": 79.30002,
+    "elevation_m": 252.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 35.15,
+      "EC_Earth3P_HR": 42.45,
+      "FGOALS_f3_H": 27.25,
+      "HiRAM_SIT_HR": 42.9,
+      "MPI_ESM1_2_XR": 42.4,
+      "MRI_AGCM3_2_S": 49.2,
+      "NICAM16_8S": 29.8
+     },
+     "ensemble": {
+      "median": 42.4,
+      "min": 27.25,
+      "max": 49.2,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 39.9,
+      "EC_Earth3P_HR": 43.42,
+      "FGOALS_f3_H": 41.55,
+      "HiRAM_SIT_HR": 59.45,
+      "MPI_ESM1_2_XR": 48.75,
+      "MRI_AGCM3_2_S": 61.8,
+      "NICAM16_8S": 31.65
+     },
+     "ensemble": {
+      "median": 43.42,
+      "min": 31.65,
+      "max": 61.8,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 62.22,
+      "EC_Earth3P_HR": 49.53,
+      "FGOALS_f3_H": 210.24,
+      "HiRAM_SIT_HR": 98.77,
+      "MPI_ESM1_2_XR": 26.79,
+      "MRI_AGCM3_2_S": 113.36,
+      "NICAM16_8S": 122.99
+     },
+     "ensemble": {
+      "median": 98.77,
+      "min": 26.79,
+      "max": 210.24,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 78.29,
+      "EC_Earth3P_HR": 63.55,
+      "FGOALS_f3_H": 189.48,
+      "HiRAM_SIT_HR": 110.36,
+      "MPI_ESM1_2_XR": 31.07,
+      "MRI_AGCM3_2_S": 101.81,
+      "NICAM16_8S": 177.66
+     },
+     "ensemble": {
+      "median": 101.81,
+      "min": 31.07,
+      "max": 189.48,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": 25.82,
+     "EC_Earth3P_HR": 28.31,
+     "FGOALS_f3_H": -9.88,
+     "HiRAM_SIT_HR": 11.74,
+     "MPI_ESM1_2_XR": 15.95,
+     "MRI_AGCM3_2_S": -10.19,
+     "NICAM16_8S": 44.46
+    },
+    "ensemble": {
+     "median": 15.95,
+     "min": -10.19,
+     "max": 44.46,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 22.0,
+     "min": 18.0,
+     "max": 34.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 40.0,
+     "min": 28.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 38.0,
+     "min": 7.0,
+     "max": 49.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 32.0,
+     "min": 13.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 33.0,
+     "min": 17.0,
+     "max": 52.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 25.0,
+     "min": 18.0,
+     "max": 43.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 32.0,
+     "min": 25.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 30.0,
+     "min": 8.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 41.0,
+     "min": 20.0,
+     "max": 64.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 28.0,
+     "min": 22.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 29.0,
+     "min": 19.0,
+     "max": 46.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 29.0,
+     "min": 6.0,
+     "max": 40.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 41.0,
+     "min": 1.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 28.0,
+     "min": 16.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 32.0,
+     "min": 12.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 30.0,
+     "min": 10.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 31.0,
+     "min": 16.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 44.0,
+     "min": 12.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 40.0,
+     "min": 22.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 37.0,
+     "min": 23.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 33.0,
+     "min": 23.0,
+     "max": 86.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 40.0,
+     "min": 26.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 39.0,
+     "min": 22.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 32.0,
+     "min": 11.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 34.0,
+     "min": 13.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 21.0,
+     "min": 9.0,
+     "max": 44.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 48.0,
+     "min": 31.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 33.0,
+     "min": 22.0,
+     "max": 44.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 35.0,
+     "min": 16.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 40.0,
+     "min": 22.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 40.0,
+     "min": 17.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 25.0,
+     "min": 6.0,
+     "max": 43.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 42.0,
+     "min": 31.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 43.0,
+     "min": 21.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 37.0,
+     "min": 29.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 30.0,
+     "min": 18.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 40.0,
+     "min": 27.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 44.0,
+     "min": 24.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 35.0,
+     "min": 20.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 57.0,
+     "min": 29.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 29.0,
+     "min": 15.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 41.0,
+     "min": 4.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 25.0,
+     "min": 13.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 52.0,
+     "min": 25.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 40.0,
+     "min": 27.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 53.0,
+     "min": 17.0,
+     "max": 83.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 52.0,
+     "min": 30.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 39.0,
+     "min": 8.0,
+     "max": 46.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 32.0,
+     "min": 21.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 28.0,
+     "min": 16.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 36.0,
+     "min": 18.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 49.0,
+     "min": 18.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 31.0,
+     "min": 13.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 45.0,
+     "min": 26.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 33.0,
+     "min": 16.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 57.0,
+     "min": 20.0,
+     "max": 79.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 42.0,
+     "min": 18.0,
+     "max": 79.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 46.0,
+     "min": 25.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 58.0,
+     "min": 25.0,
+     "max": 83.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 45.0,
+     "min": 22.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 45.0,
+     "min": 13.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 42.0,
+     "min": 11.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 47.0,
+     "min": 22.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 51.0,
+     "min": 30.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 43.0,
+     "min": 23.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 66.0,
+     "min": 19.0,
+     "max": 92.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 44.0,
+     "min": 25.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 43.0,
+     "min": 30.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 64.0,
+     "min": 46.0,
+     "max": 83.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 61.0,
+     "min": 39.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 56.0,
+     "min": 27.0,
+     "max": 93.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P05": {
+   "grid": {
+    "latitude": 11.099998,
+    "longitude": 79.100006,
+    "elevation_m": 82.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 24.2,
+      "EC_Earth3P_HR": 29.05,
+      "FGOALS_f3_H": 29.05,
+      "HiRAM_SIT_HR": 35.8,
+      "MPI_ESM1_2_XR": 18.1,
+      "MRI_AGCM3_2_S": 38.9,
+      "NICAM16_8S": 31.65
+     },
+     "ensemble": {
+      "median": 29.05,
+      "min": 18.1,
+      "max": 38.9,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 31.1,
+      "EC_Earth3P_HR": 34.37,
+      "FGOALS_f3_H": 36.15,
+      "HiRAM_SIT_HR": 58.3,
+      "MPI_ESM1_2_XR": 27.45,
+      "MRI_AGCM3_2_S": 54.25,
+      "NICAM16_8S": 35.3
+     },
+     "ensemble": {
+      "median": 35.3,
+      "min": 27.45,
+      "max": 58.3,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 51.53,
+      "EC_Earth3P_HR": 43.08,
+      "FGOALS_f3_H": 120.62,
+      "HiRAM_SIT_HR": 90.58,
+      "MPI_ESM1_2_XR": 47.99,
+      "MRI_AGCM3_2_S": 78.88,
+      "NICAM16_8S": 130.36
+     },
+     "ensemble": {
+      "median": 78.88,
+      "min": 43.08,
+      "max": 130.36,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 74.64,
+      "EC_Earth3P_HR": 46.3,
+      "FGOALS_f3_H": 114.97,
+      "HiRAM_SIT_HR": 106.93,
+      "MPI_ESM1_2_XR": 55.52,
+      "MRI_AGCM3_2_S": 88.73,
+      "NICAM16_8S": 137.55
+     },
+     "ensemble": {
+      "median": 88.73,
+      "min": 46.3,
+      "max": 137.55,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": 44.85,
+     "EC_Earth3P_HR": 7.47,
+     "FGOALS_f3_H": -4.69,
+     "HiRAM_SIT_HR": 18.06,
+     "MPI_ESM1_2_XR": 15.7,
+     "MRI_AGCM3_2_S": 12.49,
+     "NICAM16_8S": 5.51
+    },
+    "ensemble": {
+     "median": 12.49,
+     "min": -4.69,
+     "max": 44.85,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 16.0,
+     "min": 8.0,
+     "max": 26.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 29.0,
+     "min": 12.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 21.0,
+     "min": 2.0,
+     "max": 32.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 29.0,
+     "min": 11.0,
+     "max": 39.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 12.0,
+     "min": 2.0,
+     "max": 30.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 13.0,
+     "min": 1.0,
+     "max": 29.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 24.0,
+     "min": 19.0,
+     "max": 40.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 15.0,
+     "min": 5.0,
+     "max": 35.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 28.0,
+     "min": 21.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 20.0,
+     "min": 17.0,
+     "max": 43.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 15.0,
+     "min": 4.0,
+     "max": 33.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 9.0,
+     "min": 4.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 21.0,
+     "min": 0.0,
+     "max": 33.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 16.0,
+     "min": 2.0,
+     "max": 34.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 29.0,
+     "min": 12.0,
+     "max": 76.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 22.0,
+     "min": 6.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 25.0,
+     "min": 7.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 22.0,
+     "min": 7.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 28.0,
+     "min": 22.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 27.0,
+     "min": 6.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 33.0,
+     "min": 18.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 41.0,
+     "min": 13.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 26.0,
+     "min": 10.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 22.0,
+     "min": 7.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 32.0,
+     "min": 7.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 28.0,
+     "min": 12.0,
+     "max": 47.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 39.0,
+     "min": 21.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 22.0,
+     "min": 4.0,
+     "max": 25.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 22.0,
+     "min": 5.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 38.0,
+     "min": 18.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 33.0,
+     "min": 25.0,
+     "max": 40.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 18.0,
+     "min": 0.0,
+     "max": 39.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 31.0,
+     "min": 13.0,
+     "max": 41.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 34.0,
+     "min": 31.0,
+     "max": 49.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 38.0,
+     "min": 24.0,
+     "max": 45.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 24.0,
+     "min": 8.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 24.0,
+     "min": 6.0,
+     "max": 35.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 30.0,
+     "min": 17.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 21.0,
+     "min": 10.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 29.0,
+     "min": 20.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 20.0,
+     "min": 0.0,
+     "max": 41.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 28.0,
+     "min": 7.0,
+     "max": 45.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 38.0,
+     "min": 0.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 36.0,
+     "min": 23.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 29.0,
+     "min": 21.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 34.0,
+     "min": 16.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 46.0,
+     "min": 17.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 27.0,
+     "min": 0.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 22.0,
+     "min": 9.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 26.0,
+     "min": 16.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 28.0,
+     "min": 8.0,
+     "max": 41.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 38.0,
+     "min": 17.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 25.0,
+     "min": 15.0,
+     "max": 53.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 39.0,
+     "min": 30.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 32.0,
+     "min": 11.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 35.0,
+     "min": 16.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 37.0,
+     "min": 11.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 38.0,
+     "min": 20.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 34.0,
+     "min": 15.0,
+     "max": 90.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 34.0,
+     "min": 5.0,
+     "max": 58.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 40.0,
+     "min": 14.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 30.0,
+     "min": 5.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 36.0,
+     "min": 20.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 44.0,
+     "min": 22.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 35.0,
+     "min": 6.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 40.0,
+     "min": 33.0,
+     "max": 114.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 25.0,
+     "min": 17.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 28.0,
+     "min": 14.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 60.0,
+     "min": 38.0,
+     "max": 76.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 52.0,
+     "min": 31.0,
+     "max": 83.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 42.5,
+     "min": 33.0,
+     "max": 96.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P06": {
+   "grid": {
+    "latitude": 21.700005,
+    "longitude": 82.20001,
+    "elevation_m": 258.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 45.15,
+      "EC_Earth3P_HR": 56.2,
+      "FGOALS_f3_H": 45.65,
+      "HiRAM_SIT_HR": 62.1,
+      "MPI_ESM1_2_XR": 43.4,
+      "MRI_AGCM3_2_S": 66.1,
+      "NICAM16_8S": 48.35
+     },
+     "ensemble": {
+      "median": 48.35,
+      "min": 43.4,
+      "max": 66.1,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 48.5,
+      "EC_Earth3P_HR": 53.89,
+      "FGOALS_f3_H": 60.45,
+      "HiRAM_SIT_HR": 75.9,
+      "MPI_ESM1_2_XR": 27.95,
+      "MRI_AGCM3_2_S": 64.25,
+      "NICAM16_8S": 60.5
+     },
+     "ensemble": {
+      "median": 60.45,
+      "min": 27.95,
+      "max": 75.9,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 123.49,
+      "EC_Earth3P_HR": 61.73,
+      "FGOALS_f3_H": 359.57,
+      "HiRAM_SIT_HR": 189.11,
+      "MPI_ESM1_2_XR": 55.53,
+      "MRI_AGCM3_2_S": 94.02,
+      "NICAM16_8S": 192.25
+     },
+     "ensemble": {
+      "median": 123.49,
+      "min": 55.53,
+      "max": 359.57,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 139.15,
+      "EC_Earth3P_HR": 66.23,
+      "FGOALS_f3_H": 449.71,
+      "HiRAM_SIT_HR": 175.19,
+      "MPI_ESM1_2_XR": 54.09,
+      "MRI_AGCM3_2_S": 159.37,
+      "NICAM16_8S": 186.44
+     },
+     "ensemble": {
+      "median": 159.37,
+      "min": 54.09,
+      "max": 449.71,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": 12.67,
+     "EC_Earth3P_HR": 7.28,
+     "FGOALS_f3_H": 25.07,
+     "HiRAM_SIT_HR": -7.36,
+     "MPI_ESM1_2_XR": -2.6,
+     "MRI_AGCM3_2_S": 69.5,
+     "NICAM16_8S": -3.02
+    },
+    "ensemble": {
+     "median": 7.28,
+     "min": -7.36,
+     "max": 69.5,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 37.0,
+     "min": 25.0,
+     "max": 60.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 54.0,
+     "min": 37.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 49.0,
+     "min": 13.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 42.0,
+     "min": 13.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 53.0,
+     "min": 41.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 39.0,
+     "min": 0.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 44.0,
+     "min": 24.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 60.0,
+     "min": 41.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 53.0,
+     "min": 19.0,
+     "max": 75.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 49.0,
+     "min": 25.0,
+     "max": 79.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 48.0,
+     "min": 22.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 29.0,
+     "min": 23.0,
+     "max": 49.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 41.0,
+     "min": 0.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 51.0,
+     "min": 30.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 45.0,
+     "min": 25.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 49.0,
+     "min": 23.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 53.0,
+     "min": 43.0,
+     "max": 73.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 50.0,
+     "min": 26.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 49.0,
+     "min": 36.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 58.0,
+     "min": 29.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 50.0,
+     "min": 24.0,
+     "max": 94.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 57.0,
+     "min": 34.0,
+     "max": 79.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 55.0,
+     "min": 45.0,
+     "max": 89.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 42.0,
+     "min": 23.0,
+     "max": 89.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 48.0,
+     "min": 21.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 56.0,
+     "min": 16.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 58.0,
+     "min": 30.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 50.0,
+     "min": 11.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 54.0,
+     "min": 7.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 49.0,
+     "min": 44.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 51.0,
+     "min": 37.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 46.0,
+     "min": 24.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 60.0,
+     "min": 45.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 58.0,
+     "min": 32.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 50.0,
+     "min": 33.0,
+     "max": 72.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 47.0,
+     "min": 32.0,
+     "max": 86.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 39.0,
+     "min": 13.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 57.0,
+     "min": 46.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 55.0,
+     "min": 22.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 54.0,
+     "min": 35.0,
+     "max": 79.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 56.0,
+     "min": 8.0,
+     "max": 94.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 44.0,
+     "min": 24.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 40.0,
+     "min": 20.0,
+     "max": 71.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 70.0,
+     "min": 22.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 51.0,
+     "min": 3.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 53.0,
+     "min": 27.0,
+     "max": 81.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 57.0,
+     "min": 17.0,
+     "max": 79.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 50.0,
+     "min": 1.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 61.0,
+     "min": 3.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 40.0,
+     "min": 35.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 45.0,
+     "min": 19.0,
+     "max": 70.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 48.0,
+     "min": 28.0,
+     "max": 90.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 47.0,
+     "min": 0.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 56.0,
+     "min": 0.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 42.0,
+     "min": 10.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 65.0,
+     "min": 44.0,
+     "max": 83.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 48.0,
+     "min": 42.0,
+     "max": 82.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 50.0,
+     "min": 37.0,
+     "max": 78.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 59.0,
+     "min": 27.0,
+     "max": 92.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 57.0,
+     "min": 9.0,
+     "max": 93.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 66.0,
+     "min": 0.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 48.0,
+     "min": 0.0,
+     "max": 84.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 46.0,
+     "min": 16.0,
+     "max": 65.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 66.0,
+     "min": 36.0,
+     "max": 77.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 57.0,
+     "min": 0.0,
+     "max": 80.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 72.0,
+     "min": 41.0,
+     "max": 91.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 51.0,
+     "min": 3.0,
+     "max": 87.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 61.0,
+     "min": 32.0,
+     "max": 93.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 71.0,
+     "min": 42.0,
+     "max": 85.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 66.0,
+     "min": 52.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 78.5,
+     "min": 47.0,
+     "max": 100.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P07": {
+   "grid": {
+    "latitude": 22.900002,
+    "longitude": 69.7,
+    "elevation_m": 16.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 12.45,
+      "EC_Earth3P_HR": 7.45,
+      "FGOALS_f3_H": 1.7,
+      "HiRAM_SIT_HR": 2.95,
+      "MPI_ESM1_2_XR": 6.2,
+      "MRI_AGCM3_2_S": 14.9,
+      "NICAM16_8S": 7.2
+     },
+     "ensemble": {
+      "median": 7.2,
+      "min": 1.7,
+      "max": 14.9,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 17.9,
+      "EC_Earth3P_HR": 7.47,
+      "FGOALS_f3_H": 3.3,
+      "HiRAM_SIT_HR": 5.55,
+      "MPI_ESM1_2_XR": 8.45,
+      "MRI_AGCM3_2_S": 16.7,
+      "NICAM16_8S": 11.9
+     },
+     "ensemble": {
+      "median": 8.45,
+      "min": 3.3,
+      "max": 17.9,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 68.12,
+      "EC_Earth3P_HR": 34.95,
+      "FGOALS_f3_H": 172.53,
+      "HiRAM_SIT_HR": 107.95,
+      "MPI_ESM1_2_XR": 32.36,
+      "MRI_AGCM3_2_S": 49.2,
+      "NICAM16_8S": 79.2
+     },
+     "ensemble": {
+      "median": 68.12,
+      "min": 32.36,
+      "max": 172.53,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 71.07,
+      "EC_Earth3P_HR": 58.61,
+      "FGOALS_f3_H": 107.12,
+      "HiRAM_SIT_HR": 85.29,
+      "MPI_ESM1_2_XR": 33.64,
+      "MRI_AGCM3_2_S": 73.33,
+      "NICAM16_8S": 84.97
+     },
+     "ensemble": {
+      "median": 73.33,
+      "min": 33.64,
+      "max": 107.12,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": 4.32,
+     "EC_Earth3P_HR": 67.69,
+     "FGOALS_f3_H": -37.91,
+     "HiRAM_SIT_HR": -20.99,
+     "MPI_ESM1_2_XR": 3.94,
+     "MRI_AGCM3_2_S": 49.06,
+     "NICAM16_8S": 7.28
+    },
+    "ensemble": {
+     "median": 4.32,
+     "min": -37.91,
+     "max": 67.69,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 12.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 7.0,
+     "min": 0.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 8.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 9.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 14.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 5.0,
+     "min": 2.0,
+     "max": 9.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 8.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 17.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 10.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 8.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 8.0,
+     "min": 1.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 7.0,
+     "min": 0.0,
+     "max": 17.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 3.0,
+     "min": 2.0,
+     "max": 19.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 7.0,
+     "min": 0.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 15.0,
+     "min": 0.0,
+     "max": 27.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 24.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 5.0,
+     "min": 1.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 12.0,
+     "min": 0.0,
+     "max": 24.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 12.0,
+     "min": 2.0,
+     "max": 32.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 6.0,
+     "min": 3.0,
+     "max": 17.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 9.0,
+     "min": 1.0,
+     "max": 18.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 29.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 3.0,
+     "min": 1.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 7.0,
+     "min": 0.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 14.0,
+     "min": 0.0,
+     "max": 19.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 7.0,
+     "min": 1.0,
+     "max": 28.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 26.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 9.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 14.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 7.0,
+     "min": 2.0,
+     "max": 17.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 11.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 9.0,
+     "min": 0.0,
+     "max": 20.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 25.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 27.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 11.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 6.0,
+     "min": 2.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 4.0,
+     "min": 0.0,
+     "max": 20.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 10.0,
+     "min": 0.0,
+     "max": 28.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 6.0,
+     "min": 2.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 7.0,
+     "min": 0.0,
+     "max": 22.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 4.0,
+     "min": 1.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 6.0,
+     "min": 2.0,
+     "max": 18.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 22.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 4.0,
+     "min": 1.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 4.0,
+     "min": 1.0,
+     "max": 12.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 8.0,
+     "min": 1.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 8.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 6.0,
+     "min": 1.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 8.0,
+     "min": 2.0,
+     "max": 14.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 10.0,
+     "min": 2.0,
+     "max": 17.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 6.0,
+     "min": 0.0,
+     "max": 33.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 10.0,
+     "min": 0.0,
+     "max": 21.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 7.0,
+     "min": 0.0,
+     "max": 22.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 8.0,
+     "min": 3.0,
+     "max": 31.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 10.0,
+     "min": 2.0,
+     "max": 30.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 4.0,
+     "min": 2.0,
+     "max": 17.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 10.0,
+     "min": 2.0,
+     "max": 14.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 12.0,
+     "min": 5.0,
+     "max": 33.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 8.0,
+     "min": 3.0,
+     "max": 32.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 8.0,
+     "min": 1.0,
+     "max": 45.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 19.0,
+     "min": 0.0,
+     "max": 51.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 13.5,
+     "min": 0.0,
+     "max": 36.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P08": {
+   "grid": {
+    "latitude": 20.300003,
+    "longitude": 86.600006,
+    "elevation_m": 4.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 4.4,
+      "EC_Earth3P_HR": 4.9,
+      "FGOALS_f3_H": 1.35,
+      "HiRAM_SIT_HR": 0.4,
+      "MPI_ESM1_2_XR": 0.0,
+      "MRI_AGCM3_2_S": 3.1,
+      "NICAM16_8S": 0.75
+     },
+     "ensemble": {
+      "median": 1.35,
+      "min": 0.0,
+      "max": 4.9,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 4.85,
+      "EC_Earth3P_HR": 6.16,
+      "FGOALS_f3_H": 1.95,
+      "HiRAM_SIT_HR": 0.85,
+      "MPI_ESM1_2_XR": 0.0,
+      "MRI_AGCM3_2_S": 4.4,
+      "NICAM16_8S": 1.05
+     },
+     "ensemble": {
+      "median": 1.95,
+      "min": 0.0,
+      "max": 6.16,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 133.86,
+      "EC_Earth3P_HR": 72.02,
+      "FGOALS_f3_H": 352.63,
+      "HiRAM_SIT_HR": 219.58,
+      "MPI_ESM1_2_XR": 89.69,
+      "MRI_AGCM3_2_S": 146.11,
+      "NICAM16_8S": 250.19
+     },
+     "ensemble": {
+      "median": 146.11,
+      "min": 72.02,
+      "max": 352.63,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 123.76,
+      "EC_Earth3P_HR": 91.49,
+      "FGOALS_f3_H": 367.7,
+      "HiRAM_SIT_HR": 275.06,
+      "MPI_ESM1_2_XR": 103.29,
+      "MRI_AGCM3_2_S": 98.43,
+      "NICAM16_8S": 281.01
+     },
+     "ensemble": {
+      "median": 123.76,
+      "min": 91.49,
+      "max": 367.7,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": -7.54,
+     "EC_Earth3P_HR": 27.03,
+     "FGOALS_f3_H": 4.28,
+     "HiRAM_SIT_HR": 25.26,
+     "MPI_ESM1_2_XR": 15.17,
+     "MRI_AGCM3_2_S": -32.63,
+     "NICAM16_8S": 12.32
+    },
+    "ensemble": {
+     "median": 12.32,
+     "min": -32.63,
+     "max": 27.03,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 4.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 4.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 4.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 3.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 4.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 4.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 26.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 1.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 4.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 15.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 11.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 4.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 9.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 12.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 8.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 8.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 10.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 3.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 5.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 12.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 16.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 2.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 13.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 6.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 18.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 0.0,
+     "min": 0.0,
+     "max": 35.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 1.0,
+     "min": 0.0,
+     "max": 7.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 8.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 3.0,
+     "min": 0.0,
+     "max": 11.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 2.0,
+     "min": 0.0,
+     "max": 18.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 1.5,
+     "min": 0.0,
+     "max": 23.0,
+     "n_models": 6
+    }
+   ]
+  },
+  "P09": {
+   "grid": {
+    "latitude": 23.5,
+    "longitude": 87.30002,
+    "elevation_m": 107.0
+   },
+   "heat_days_40c": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 24.25,
+      "EC_Earth3P_HR": 24.1,
+      "FGOALS_f3_H": 21.85,
+      "HiRAM_SIT_HR": 33.65,
+      "MPI_ESM1_2_XR": 13.25,
+      "MRI_AGCM3_2_S": 33.95,
+      "NICAM16_8S": 21.4
+     },
+     "ensemble": {
+      "median": 24.1,
+      "min": 13.25,
+      "max": 33.95,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 20,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 24.7,
+      "EC_Earth3P_HR": 19.26,
+      "FGOALS_f3_H": 35.05,
+      "HiRAM_SIT_HR": 47.25,
+      "MPI_ESM1_2_XR": 8.65,
+      "MRI_AGCM3_2_S": 45.8,
+      "NICAM16_8S": 24.5
+     },
+     "ensemble": {
+      "median": 24.7,
+      "min": 8.65,
+      "max": 47.25,
+      "n_models": 7
+     },
+     "years_used": {
+      "CMCC_CM2_VHR4": 20,
+      "EC_Earth3P_HR": 19,
+      "FGOALS_f3_H": 20,
+      "HiRAM_SIT_HR": 20,
+      "MPI_ESM1_2_XR": 20,
+      "MRI_AGCM3_2_S": 20,
+      "NICAM16_8S": 20
+     }
+    }
+   },
+   "rx1day_mm": {
+    "today": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 102.1,
+      "EC_Earth3P_HR": 60.24,
+      "FGOALS_f3_H": 277.74,
+      "HiRAM_SIT_HR": 167.56,
+      "MPI_ESM1_2_XR": 40.25,
+      "MRI_AGCM3_2_S": 126.09,
+      "NICAM16_8S": 228.17
+     },
+     "ensemble": {
+      "median": 126.09,
+      "min": 40.25,
+      "max": 277.74,
+      "n_models": 7
+     }
+    },
+    "2040": {
+     "per_model": {
+      "CMCC_CM2_VHR4": 142.23,
+      "EC_Earth3P_HR": 74.16,
+      "FGOALS_f3_H": 354.26,
+      "HiRAM_SIT_HR": 165.09,
+      "MPI_ESM1_2_XR": 44.87,
+      "MRI_AGCM3_2_S": 91.91,
+      "NICAM16_8S": 234.84
+     },
+     "ensemble": {
+      "median": 142.23,
+      "min": 44.87,
+      "max": 354.26,
+      "n_models": 7
+     }
+    }
+   },
+   "rx1day_change_pct": {
+    "per_model": {
+     "CMCC_CM2_VHR4": 39.3,
+     "EC_Earth3P_HR": 23.09,
+     "FGOALS_f3_H": 27.55,
+     "HiRAM_SIT_HR": -1.47,
+     "MPI_ESM1_2_XR": 11.49,
+     "MRI_AGCM3_2_S": -27.11,
+     "NICAM16_8S": 2.92
+    },
+    "ensemble": {
+     "median": 11.49,
+     "min": -27.11,
+     "max": 39.3,
+     "n_models": 7
+    }
+   },
+   "heat_series": [
+    {
+     "year": 1980,
+     "median": 18.0,
+     "min": 10.0,
+     "max": 39.0,
+     "n_models": 7
+    },
+    {
+     "year": 1981,
+     "median": 12.0,
+     "min": 0.0,
+     "max": 37.0,
+     "n_models": 7
+    },
+    {
+     "year": 1982,
+     "median": 13.0,
+     "min": 0.0,
+     "max": 43.0,
+     "n_models": 7
+    },
+    {
+     "year": 1983,
+     "median": 14.0,
+     "min": 2.0,
+     "max": 32.0,
+     "n_models": 7
+    },
+    {
+     "year": 1984,
+     "median": 17.0,
+     "min": 12.0,
+     "max": 35.0,
+     "n_models": 7
+    },
+    {
+     "year": 1985,
+     "median": 14.0,
+     "min": 11.0,
+     "max": 28.0,
+     "n_models": 7
+    },
+    {
+     "year": 1986,
+     "median": 13.0,
+     "min": 1.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 1987,
+     "median": 32.0,
+     "min": 15.0,
+     "max": 45.0,
+     "n_models": 7
+    },
+    {
+     "year": 1988,
+     "median": 15.0,
+     "min": 0.0,
+     "max": 33.0,
+     "n_models": 7
+    },
+    {
+     "year": 1989,
+     "median": 11.0,
+     "min": 0.0,
+     "max": 46.0,
+     "n_models": 7
+    },
+    {
+     "year": 1990,
+     "median": 13.0,
+     "min": 3.0,
+     "max": 63.0,
+     "n_models": 7
+    },
+    {
+     "year": 1991,
+     "median": 13.0,
+     "min": 1.0,
+     "max": 38.0,
+     "n_models": 7
+    },
+    {
+     "year": 1992,
+     "median": 7.0,
+     "min": 0.0,
+     "max": 47.0,
+     "n_models": 7
+    },
+    {
+     "year": 1993,
+     "median": 26.0,
+     "min": 5.0,
+     "max": 38.0,
+     "n_models": 7
+    },
+    {
+     "year": 1994,
+     "median": 17.0,
+     "min": 14.0,
+     "max": 74.0,
+     "n_models": 7
+    },
+    {
+     "year": 1995,
+     "median": 25.0,
+     "min": 3.0,
+     "max": 64.0,
+     "n_models": 7
+    },
+    {
+     "year": 1996,
+     "median": 21.0,
+     "min": 13.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 1997,
+     "median": 27.0,
+     "min": 12.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 1998,
+     "median": 28.0,
+     "min": 9.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 1999,
+     "median": 25.0,
+     "min": 5.0,
+     "max": 62.0,
+     "n_models": 7
+    },
+    {
+     "year": 2000,
+     "median": 12.0,
+     "min": 0.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2001,
+     "median": 11.0,
+     "min": 6.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2002,
+     "median": 27.0,
+     "min": 0.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2003,
+     "median": 34.0,
+     "min": 7.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2004,
+     "median": 18.0,
+     "min": 0.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2005,
+     "median": 24.0,
+     "min": 2.0,
+     "max": 39.0,
+     "n_models": 7
+    },
+    {
+     "year": 2006,
+     "median": 25.0,
+     "min": 0.0,
+     "max": 46.0,
+     "n_models": 7
+    },
+    {
+     "year": 2007,
+     "median": 24.0,
+     "min": 0.0,
+     "max": 29.0,
+     "n_models": 7
+    },
+    {
+     "year": 2008,
+     "median": 25.0,
+     "min": 0.0,
+     "max": 37.0,
+     "n_models": 7
+    },
+    {
+     "year": 2009,
+     "median": 33.0,
+     "min": 20.0,
+     "max": 52.0,
+     "n_models": 7
+    },
+    {
+     "year": 2010,
+     "median": 22.0,
+     "min": 10.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 2011,
+     "median": 27.0,
+     "min": 11.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2012,
+     "median": 20.0,
+     "min": 0.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 2013,
+     "median": 18.0,
+     "min": 2.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2014,
+     "median": 29.0,
+     "min": 6.0,
+     "max": 45.0,
+     "n_models": 7
+    },
+    {
+     "year": 2015,
+     "median": 34.0,
+     "min": 5.0,
+     "max": 56.0,
+     "n_models": 7
+    },
+    {
+     "year": 2016,
+     "median": 17.0,
+     "min": 0.0,
+     "max": 34.0,
+     "n_models": 7
+    },
+    {
+     "year": 2017,
+     "median": 29.0,
+     "min": 0.0,
+     "max": 49.0,
+     "n_models": 7
+    },
+    {
+     "year": 2018,
+     "median": 21.0,
+     "min": 0.0,
+     "max": 40.0,
+     "n_models": 7
+    },
+    {
+     "year": 2019,
+     "median": 30.0,
+     "min": 5.0,
+     "max": 42.0,
+     "n_models": 7
+    },
+    {
+     "year": 2020,
+     "median": 17.0,
+     "min": 0.0,
+     "max": 49.0,
+     "n_models": 7
+    },
+    {
+     "year": 2021,
+     "median": 5.0,
+     "min": 0.0,
+     "max": 46.0,
+     "n_models": 7
+    },
+    {
+     "year": 2022,
+     "median": 23.0,
+     "min": 3.0,
+     "max": 47.0,
+     "n_models": 7
+    },
+    {
+     "year": 2023,
+     "median": 26.0,
+     "min": 10.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2024,
+     "median": 22.0,
+     "min": 0.0,
+     "max": 34.0,
+     "n_models": 7
+    },
+    {
+     "year": 2025,
+     "median": 18.0,
+     "min": 0.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2026,
+     "median": 39.0,
+     "min": 0.0,
+     "max": 45.0,
+     "n_models": 7
+    },
+    {
+     "year": 2027,
+     "median": 26.0,
+     "min": 0.0,
+     "max": 34.0,
+     "n_models": 7
+    },
+    {
+     "year": 2028,
+     "median": 18.0,
+     "min": 0.0,
+     "max": 52.0,
+     "n_models": 7
+    },
+    {
+     "year": 2029,
+     "median": 19.0,
+     "min": 0.0,
+     "max": 49.0,
+     "n_models": 7
+    },
+    {
+     "year": 2030,
+     "median": 23.0,
+     "min": 2.0,
+     "max": 55.0,
+     "n_models": 7
+    },
+    {
+     "year": 2031,
+     "median": 41.0,
+     "min": 12.0,
+     "max": 52.0,
+     "n_models": 7
+    },
+    {
+     "year": 2032,
+     "median": 21.0,
+     "min": 0.0,
+     "max": 50.0,
+     "n_models": 7
+    },
+    {
+     "year": 2033,
+     "median": 22.0,
+     "min": 6.0,
+     "max": 48.0,
+     "n_models": 7
+    },
+    {
+     "year": 2034,
+     "median": 24.0,
+     "min": 0.0,
+     "max": 30.0,
+     "n_models": 7
+    },
+    {
+     "year": 2035,
+     "median": 26.0,
+     "min": 12.0,
+     "max": 59.0,
+     "n_models": 7
+    },
+    {
+     "year": 2036,
+     "median": 23.0,
+     "min": 0.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2037,
+     "median": 17.0,
+     "min": 0.0,
+     "max": 57.0,
+     "n_models": 7
+    },
+    {
+     "year": 2038,
+     "median": 18.0,
+     "min": 0.0,
+     "max": 68.0,
+     "n_models": 7
+    },
+    {
+     "year": 2039,
+     "median": 20.0,
+     "min": 0.0,
+     "max": 67.0,
+     "n_models": 7
+    },
+    {
+     "year": 2040,
+     "median": 44.0,
+     "min": 0.0,
+     "max": 69.0,
+     "n_models": 7
+    },
+    {
+     "year": 2041,
+     "median": 24.0,
+     "min": 0.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2042,
+     "median": 17.0,
+     "min": 0.0,
+     "max": 54.0,
+     "n_models": 7
+    },
+    {
+     "year": 2043,
+     "median": 25.0,
+     "min": 0.0,
+     "max": 43.0,
+     "n_models": 7
+    },
+    {
+     "year": 2044,
+     "median": 31.0,
+     "min": 0.0,
+     "max": 40.0,
+     "n_models": 7
+    },
+    {
+     "year": 2045,
+     "median": 30.0,
+     "min": 0.0,
+     "max": 61.0,
+     "n_models": 7
+    },
+    {
+     "year": 2046,
+     "median": 23.0,
+     "min": 10.0,
+     "max": 41.0,
+     "n_models": 7
+    },
+    {
+     "year": 2047,
+     "median": 31.0,
+     "min": 4.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2048,
+     "median": 51.0,
+     "min": 0.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2049,
+     "median": 43.0,
+     "min": 6.0,
+     "max": 66.0,
+     "n_models": 7
+    },
+    {
+     "year": 2050,
+     "median": 55.0,
+     "min": 32.0,
+     "max": 89.0,
+     "n_models": 6
+    }
+   ]
+  }
+ }
+}

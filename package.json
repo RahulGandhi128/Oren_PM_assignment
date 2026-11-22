@@ -1,0 +1,41 @@
+{
+  "name": "horizon",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n next,api -c cyan,magenta \"npm:next-dev\" \"npm:api-dev\"",
+    "next-dev": "next dev",
+    "api-dev": ".venv/bin/python -m uvicorn api.index:app --reload --port 8000",
+    "setup:py": "uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt -r requirements-dev.txt",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "check:hex": "! grep -rnE \"#[0-9A-Fa-f]{3,6}\\b\" src --include=*.tsx --include=*.ts --include=*.css | grep -v '^src/theme/'",
+    "gen:types": "sh -c '.venv/bin/python -c \"import json; from backend.app.main import app; print(json.dumps(app.openapi()))\" > .openapi.json && openapi-typescript .openapi.json -o src/lib/api-types.ts && rm .openapi.json'",
+    "data:build": ".venv-pipeline/bin/python -I backend/pipeline/process_openmeteo.py && .venv-pipeline/bin/python -I backend/pipeline/process_aqueduct.py && .venv-pipeline/bin/python -I backend/pipeline/build_hazards.py && .venv-pipeline/bin/python -I backend/pipeline/build_catalog.py",
+    "data:check": ".venv-pipeline/bin/python -I backend/pipeline/check_pipeline.py"
+  },
+  "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.2.1",
+    "@radix-ui/react-toggle-group": "^1.2.1",
+    "d3-geo": "^3.1.2",
+    "framer-motion": "^14.14.0",
+    "geist": "^1.9.2",
+    "next": "^15.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "recharts": "^3.11.0",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/d3-geo": "^3.1.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "concurrently": "^10.0.7",
+    "openapi-typescript": "^7.13.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.9.3"
+  }
+}

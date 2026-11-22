@@ -1,0 +1,419 @@
+# Every coefficient the exposure engine uses (spec 7.2–7.5), plus map display thresholds.
+# The API accepts overrides by id; values outside [min, max] are rejected with 422.
+# "source" says where the default comes from. Most are industry-norm placeholders to be
+# replaced with Nimbus actuals; they are labelled Assumption everywhere in the UI.
+# "value" is the official (Central) set. "conservative" / "severe" are the lower-loss and higher-loss
+# ends of a plausible range, used by the presets and the sensitivity test. They are judgment, not data.
+
+# ---------------------------------------------------------------- General
+- id: operating_days
+  label: Operating days per year
+  value: 330
+  min: 300
+  max: 360
+  conservative: 345
+  severe: 310
+  unit: days
+  group: General
+  rationale: Typical Indian cement plant after planned maintenance shutdowns. Revenue per day = revenue / operating days.
+  source: Assumption (industry norm); replace with Nimbus actuals.
+
+# ---------------------------------------------------------------- Heat
+- id: heat_loss_per_day_integrated
+  label: Output lost per ≥40 °C day, integrated plant
+  value: 0.10
+  min: 0
+  max: 0.5
+  conservative: 0.05
+  severe: 0.2
+  unit: fraction of a day
+  group: Heat
+  rationale: Worker rest cycles, kiln and cooler derating, and conveyor and mill trips on extreme-heat days.
+  source: Assumption (spec 7.2); no Nimbus downtime logs yet.
+- id: heat_loss_per_day_grinding
+  label: Output lost per ≥40 °C day, grinding unit
+  value: 0.05
+  min: 0
+  max: 0.5
+  conservative: 0.02
+  severe: 0.1
+  unit: fraction of a day
+  group: Heat
+  rationale: Grinding units have no kiln, so less heat-sensitive equipment; worker rest cycles still apply.
+  source: Assumption (spec 7.2).
+
+# ---------------------------------------------------------------- Water stress
+- id: curtail_days_low
+  label: Curtailment days, Low water stress
+  value: 0
+  min: 0
+  max: 10
+  conservative: 0
+  severe: 0
+  unit: days/year
+  group: Water stress
+  rationale: Ample water; no expected curtailment.
+  source: Assumption (spec 7.2).
+- id: curtail_days_low_medium
+  label: Curtailment days, Low-Medium water stress
+  value: 0
+  min: 0
+  max: 10
+  conservative: 0
+  severe: 1
+  unit: days/year
+  group: Water stress
+  rationale: Occasional restrictions absorbed by on-site storage.
+  source: Assumption (spec 7.2).
+- id: curtail_days_medium_high
+  label: Curtailment days, Medium-High water stress
+  value: 2
+  min: 0
+  max: 20
+  conservative: 1
+  severe: 4
+  unit: days/year
+  group: Water stress
+  rationale: Summer restrictions on industrial withdrawal in some years.
+  source: Assumption (spec 7.2).
+- id: curtail_days_high
+  label: Curtailment days, High water stress
+  value: 6
+  min: 0
+  max: 30
+  conservative: 3
+  severe: 10
+  unit: days/year
+  group: Water stress
+  rationale: Regular pre-monsoon restrictions; cooling and dust suppression cut back.
+  source: Assumption (spec 7.2).
+- id: curtail_days_extremely_high
+  label: Curtailment days, Extremely High water stress
+  value: 12
+  min: 0
+  max: 60
+  conservative: 6
+  severe: 20
+  unit: days/year
+  group: Water stress
+  rationale: Withdrawals exceed 80% of supply; frequent administrative cuts in dry months.
+  source: Assumption (spec 7.2).
+- id: curtail_days_arid
+  label: Curtailment days, Arid & low water use
+  value: 6
+  min: 0
+  max: 30
+  conservative: 3
+  severe: 10
+  unit: days/year
+  group: Water stress
+  rationale: Aqueduct's arid category; treated like High.
+  source: Assumption (spec 7.2).
+- id: source_factor_groundwater
+  label: Water-source factor, groundwater
+  value: 1.2
+  min: 0
+  max: 3
+  conservative: 1.0
+  severe: 1.5
+  unit: multiplier
+  group: Water stress
+  rationale: Aquifer depletion and borewell restrictions make groundwater the most exposed source.
+  source: Assumption (spec 7.2).
+- id: source_factor_river
+  label: Water-source factor, river
+  value: 1.0
+  min: 0
+  max: 3
+  conservative: 1.0
+  severe: 1.0
+  unit: multiplier
+  group: Water stress
+  rationale: Baseline.
+  source: Assumption (spec 7.2).
+- id: source_factor_canal
+  label: Water-source factor, canal
+  value: 1.0
+  min: 0
+  max: 3
+  conservative: 1.0
+  severe: 1.0
+  unit: multiplier
+  group: Water stress
+  rationale: Canal allocations follow basin stress, like rivers.
+  source: Assumption (spec 7.2).
+- id: source_factor_reservoir
+  label: Water-source factor, reservoir
+  value: 0.8
+  min: 0
+  max: 3
+  conservative: 0.6
+  severe: 1.0
+  unit: multiplier
+  group: Water stress
+  rationale: Storage buffers short dry spells.
+  source: Assumption (spec 7.2).
+- id: source_factor_municipal
+  label: Water-source factor, municipal supply
+  value: 0.8
+  min: 0
+  max: 3
+  conservative: 0.6
+  severe: 1.0
+  unit: multiplier
+  group: Water stress
+  rationale: Municipal supply is prioritised but industrial users are cut first in shortages.
+  source: Assumption (spec 7.2).
+- id: source_factor_desalinated
+  label: Water-source factor, desalinated seawater
+  value: 0.2
+  min: 0
+  max: 3
+  conservative: 0.1
+  severe: 0.4
+  unit: multiplier
+  group: Water stress
+  rationale: Largely independent of basin stress.
+  source: Assumption (spec 7.2).
+
+# ---------------------------------------------------------------- Riverine flood
+- id: flood_prob_band_0_1
+  label: Annual flood probability, riverine score 0–1
+  value: 0.005
+  min: 0
+  max: 0.5
+  conservative: 0.0025
+  severe: 0.01
+  unit: probability/year
+  group: Riverine flood
+  rationale: Maps Aqueduct's riverine flood score to the chance of a plant-disrupting flood in a year.
+  source: Assumption (spec 7.2).
+- id: flood_prob_band_1_2
+  label: Annual flood probability, riverine score 1–2
+  value: 0.01
+  min: 0
+  max: 0.5
+  conservative: 0.005
+  severe: 0.02
+  unit: probability/year
+  group: Riverine flood
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: flood_prob_band_2_3
+  label: Annual flood probability, riverine score 2–3
+  value: 0.02
+  min: 0
+  max: 0.5
+  conservative: 0.01
+  severe: 0.04
+  unit: probability/year
+  group: Riverine flood
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: flood_prob_band_3_4
+  label: Annual flood probability, riverine score 3–4
+  value: 0.04
+  min: 0
+  max: 0.5
+  conservative: 0.02
+  severe: 0.08
+  unit: probability/year
+  group: Riverine flood
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: flood_prob_band_4_5
+  label: Annual flood probability, riverine score 4–5
+  value: 0.08
+  min: 0
+  max: 0.5
+  conservative: 0.04
+  severe: 0.15
+  unit: probability/year
+  group: Riverine flood
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: flood_elasticity
+  label: Flood probability elasticity to heavy rain
+  value: 2.0
+  min: 0
+  max: 5
+  conservative: 1.0
+  severe: 3.0
+  unit: multiplier
+  group: Riverine flood
+  rationale: A 10% rise in the wettest day of the year raises flood probability by 20% at the default. Only increases count.
+  source: Assumption (spec 7.2).
+- id: flood_downtime_days
+  label: Downtime per flood event
+  value: 14
+  min: 0
+  max: 90
+  conservative: 7
+  severe: 30
+  unit: days
+  group: Riverine flood
+  rationale: Site access, dewatering, electrical checks and restart.
+  source: Assumption (spec 7.2).
+- id: flood_damage_ratio
+  label: Asset damage per flood event
+  value: 0.02
+  min: 0
+  max: 0.5
+  conservative: 0.01
+  severe: 0.05
+  unit: fraction of asset value
+  group: Riverine flood
+  rationale: Motors, switchgear and stored material at ground level.
+  source: Assumption (spec 7.2).
+
+# ---------------------------------------------------------------- Coastal flood / cyclone
+- id: coastal_prob_band_0_1
+  label: Annual coastal event probability, coastal score 0–1
+  value: 0.005
+  min: 0
+  max: 0.5
+  conservative: 0.0025
+  severe: 0.01
+  unit: probability/year
+  group: Coastal flood / cyclone
+  rationale: Maps Aqueduct's coastal flood score to the chance of a disrupting coastal event. Applies only where coastal = Y.
+  source: Assumption (spec 7.2).
+- id: coastal_prob_band_1_2
+  label: Annual coastal event probability, coastal score 1–2
+  value: 0.01
+  min: 0
+  max: 0.5
+  conservative: 0.005
+  severe: 0.02
+  unit: probability/year
+  group: Coastal flood / cyclone
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: coastal_prob_band_2_3
+  label: Annual coastal event probability, coastal score 2–3
+  value: 0.02
+  min: 0
+  max: 0.5
+  conservative: 0.01
+  severe: 0.04
+  unit: probability/year
+  group: Coastal flood / cyclone
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: coastal_prob_band_3_4
+  label: Annual coastal event probability, coastal score 3–4
+  value: 0.04
+  min: 0
+  max: 0.5
+  conservative: 0.02
+  severe: 0.08
+  unit: probability/year
+  group: Coastal flood / cyclone
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: coastal_prob_band_4_5
+  label: Annual coastal event probability, coastal score 4–5
+  value: 0.08
+  min: 0
+  max: 0.5
+  conservative: 0.04
+  severe: 0.15
+  unit: probability/year
+  group: Coastal flood / cyclone
+  rationale: As above.
+  source: Assumption (spec 7.2).
+- id: coastal_uplift_2040
+  label: Coastal event probability uplift by 2040
+  value: 0.25
+  min: 0
+  max: 2
+  conservative: 0.1
+  severe: 0.5
+  unit: fraction
+  group: Coastal flood / cyclone
+  rationale: Sea-level rise and more intense cyclones raise the chance of a disrupting event.
+  source: Assumption (spec 7.2).
+- id: coastal_downtime_days
+  label: Downtime per coastal event
+  value: 10
+  min: 0
+  max: 90
+  conservative: 5
+  severe: 21
+  unit: days
+  group: Coastal flood / cyclone
+  rationale: Port and jetty closure, power loss, site clean-up.
+  source: Assumption (spec 7.2).
+- id: coastal_damage_ratio
+  label: Asset damage per coastal event
+  value: 0.03
+  min: 0
+  max: 0.5
+  conservative: 0.015
+  severe: 0.06
+  unit: fraction of asset value
+  group: Coastal flood / cyclone
+  rationale: Wind and storm-surge damage to sheds, conveyors and silos.
+  source: Assumption (spec 7.2).
+
+# ---------------------------------------------------------------- Clinker network
+- id: buffer_days
+  label: Clinker stock at each grinding unit
+  value: 10
+  min: 0
+  max: 60
+  conservative: 15
+  severe: 5
+  unit: days
+  group: Clinker network
+  rationale: Days a grinding unit can keep running on stored clinker when its kiln stops.
+  source: Assumption (spec 7.4); replace with Nimbus stock policy.
+
+# ---------------------------------------------------------------- Risk bands
+- id: band_moderate_pct
+  label: Moderate band starts at
+  value: 1.0
+  min: 0
+  max: 20
+  unit: "% of plant revenue"
+  group: Risk bands
+  rationale: Revenue at risk each year (own + inherited) as a share of the plant's revenue.
+  source: Assumption (spec 7.5).
+- id: band_high_pct
+  label: High band starts at
+  value: 2.5
+  min: 0
+  max: 20
+  unit: "% of plant revenue"
+  group: Risk bands
+  rationale: As above.
+  source: Assumption (spec 7.5).
+- id: band_severe_pct
+  label: Severe band starts at
+  value: 5.0
+  min: 0
+  max: 20
+  unit: "% of plant revenue"
+  group: Risk bands
+  rationale: As above.
+  source: Assumption (spec 7.5).
+
+# ---------------------------------------------------------------- Map display
+- id: icon_heat_days
+  label: Show heat icon from
+  value: 30
+  min: 0
+  max: 365
+  unit: days ≥40 °C a year
+  group: Map display
+  rationale: Hazard icons on the map mark hazards at or above this level for the selected horizon.
+  source: Display choice, not used in rupee figures.
+- id: icon_aqueduct_score
+  label: Show water / flood / coastal icon from
+  value: 3.0
+  min: 0
+  max: 5
+  unit: Aqueduct score
+  group: Map display
+  rationale: Score 3 is where Aqueduct's High category starts.
+  source: Display choice, not used in rupee figures.

@@ -1,0 +1,109 @@
+plant_id,plant,pfaf_id,scenario,ssp,year,bws_raw,bws_score,bws_cat,bws_label,estimated
+P01,Chittorgarh,452482,optimistic,SSP1-2.6,2030,10.1581,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,optimistic,SSP1-2.6,2050,7.7303,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,optimistic,SSP1-2.6,2080,4.4591,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,optimistic,SSP1-2.6,2040,,5.0,4,Extremely High (>80%),True
+P01,Chittorgarh,452482,business_as_usual,SSP3-7.0,2030,8.9154,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,business_as_usual,SSP3-7.0,2050,10.8989,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,business_as_usual,SSP3-7.0,2080,14.1131,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,business_as_usual,SSP3-7.0,2040,,5.0,4,Extremely High (>80%),True
+P01,Chittorgarh,452482,pessimistic,SSP5-8.5,2030,9.7865,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,pessimistic,SSP5-8.5,2050,7.4879,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,pessimistic,SSP5-8.5,2080,10.6456,5.0,4,Extremely High (>80%),False
+P01,Chittorgarh,452482,pessimistic,SSP5-8.5,2040,,5.0,4,Extremely High (>80%),True
+P02,Satna,452458,optimistic,SSP1-2.6,2030,0.3752,2.9077,2,Medium - High (20-40%),False
+P02,Satna,452458,optimistic,SSP1-2.6,2050,0.3062,2.6145,2,Medium - High (20-40%),False
+P02,Satna,452458,optimistic,SSP1-2.6,2080,0.1871,1.9038,1,Low - Medium (10-20%),False
+P02,Satna,452458,optimistic,SSP1-2.6,2040,,2.7611,2,Medium - High (20-40%),True
+P02,Satna,452458,business_as_usual,SSP3-7.0,2030,0.1385,1.4699,1,Low - Medium (10-20%),False
+P02,Satna,452458,business_as_usual,SSP3-7.0,2050,0.2362,2.24,2,Medium - High (20-40%),False
+P02,Satna,452458,business_as_usual,SSP3-7.0,2080,0.3688,2.8828,2,Medium - High (20-40%),False
+P02,Satna,452458,business_as_usual,SSP3-7.0,2040,,1.8549,1,Low - Medium (10-20%),True
+P02,Satna,452458,pessimistic,SSP5-8.5,2030,0.2878,2.5251,2,Medium - High (20-40%),False
+P02,Satna,452458,pessimistic,SSP5-8.5,2050,0.3334,2.7373,2,Medium - High (20-40%),False
+P02,Satna,452458,pessimistic,SSP5-8.5,2080,0.4848,3.2774,3,High (40-80%),False
+P02,Satna,452458,pessimistic,SSP5-8.5,2040,,2.6312,2,Medium - High (20-40%),True
+P06,Baloda Bazar,453291,optimistic,SSP1-2.6,2030,0.639,3.6758,3,High (40-80%),False
+P06,Baloda Bazar,453291,optimistic,SSP1-2.6,2050,0.5792,3.5341,3,High (40-80%),False
+P06,Baloda Bazar,453291,optimistic,SSP1-2.6,2080,0.5916,3.5646,3,High (40-80%),False
+P06,Baloda Bazar,453291,optimistic,SSP1-2.6,2040,,3.6049,3,High (40-80%),True
+P06,Baloda Bazar,453291,business_as_usual,SSP3-7.0,2030,0.5783,3.5318,3,High (40-80%),False
+P06,Baloda Bazar,453291,business_as_usual,SSP3-7.0,2050,0.6002,3.5854,3,High (40-80%),False
+P06,Baloda Bazar,453291,business_as_usual,SSP3-7.0,2080,0.6033,3.5929,3,High (40-80%),False
+P06,Baloda Bazar,453291,business_as_usual,SSP3-7.0,2040,,3.5586,3,High (40-80%),True
+P06,Baloda Bazar,453291,pessimistic,SSP5-8.5,2030,0.5924,3.5666,3,High (40-80%),False
+P06,Baloda Bazar,453291,pessimistic,SSP5-8.5,2050,0.597,3.5777,3,High (40-80%),False
+P06,Baloda Bazar,453291,pessimistic,SSP5-8.5,2080,0.6099,3.6086,3,High (40-80%),False
+P06,Baloda Bazar,453291,pessimistic,SSP5-8.5,2040,,3.5722,3,High (40-80%),True
+P03,Chandrapur,453465,optimistic,SSP1-2.6,2030,0.2679,2.4217,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,optimistic,SSP1-2.6,2050,0.2018,2.0129,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,optimistic,SSP1-2.6,2080,0.2231,2.1577,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,optimistic,SSP1-2.6,2040,,2.2173,2,Medium - High (20-40%),True
+P03,Chandrapur,453465,business_as_usual,SSP3-7.0,2030,0.2534,2.3414,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,business_as_usual,SSP3-7.0,2050,0.2783,2.4766,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,business_as_usual,SSP3-7.0,2080,0.2337,2.2247,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,business_as_usual,SSP3-7.0,2040,,2.409,2,Medium - High (20-40%),True
+P03,Chandrapur,453465,pessimistic,SSP5-8.5,2030,0.3379,2.7566,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,pessimistic,SSP5-8.5,2050,0.2356,2.2363,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,pessimistic,SSP5-8.5,2080,0.2136,2.0949,2,Medium - High (20-40%),False
+P03,Chandrapur,453465,pessimistic,SSP5-8.5,2040,,2.4965,2,Medium - High (20-40%),True
+P04,Nalgonda,453630,optimistic,SSP1-2.6,2030,2.8321,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,optimistic,SSP1-2.6,2050,2.7108,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,optimistic,SSP1-2.6,2080,2.9,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,optimistic,SSP1-2.6,2040,,5.0,4,Extremely High (>80%),True
+P04,Nalgonda,453630,business_as_usual,SSP3-7.0,2030,2.9913,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,business_as_usual,SSP3-7.0,2050,2.9339,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,business_as_usual,SSP3-7.0,2080,2.7589,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,business_as_usual,SSP3-7.0,2040,,5.0,4,Extremely High (>80%),True
+P04,Nalgonda,453630,pessimistic,SSP5-8.5,2030,3.1587,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,pessimistic,SSP5-8.5,2050,3.0279,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,pessimistic,SSP5-8.5,2080,3.3477,5.0,4,Extremely High (>80%),False
+P04,Nalgonda,453630,pessimistic,SSP5-8.5,2040,,5.0,4,Extremely High (>80%),True
+P05,Ariyalur,453801,optimistic,SSP1-2.6,2030,0.3218,2.6862,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,optimistic,SSP1-2.6,2050,0.3148,2.6544,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,optimistic,SSP1-2.6,2080,0.3321,2.7316,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,optimistic,SSP1-2.6,2040,,2.6703,2,Medium - High (20-40%),True
+P05,Ariyalur,453801,business_as_usual,SSP3-7.0,2030,0.2539,2.3443,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,business_as_usual,SSP3-7.0,2050,0.4252,3.0881,3,High (40-80%),False
+P05,Ariyalur,453801,business_as_usual,SSP3-7.0,2080,0.3817,2.9324,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,business_as_usual,SSP3-7.0,2040,,2.7162,2,Medium - High (20-40%),True
+P05,Ariyalur,453801,pessimistic,SSP5-8.5,2030,0.2833,2.5023,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,pessimistic,SSP5-8.5,2050,0.3238,2.6951,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,pessimistic,SSP5-8.5,2080,0.3444,2.7841,2,Medium - High (20-40%),False
+P05,Ariyalur,453801,pessimistic,SSP5-8.5,2040,,2.5987,2,Medium - High (20-40%),True
+P07,Mundra,455700,optimistic,SSP1-2.6,2030,7.2424,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,optimistic,SSP1-2.6,2050,5.9174,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,optimistic,SSP1-2.6,2080,5.9279,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,optimistic,SSP1-2.6,2040,,5.0,4,Extremely High (>80%),True
+P07,Mundra,455700,business_as_usual,SSP3-7.0,2030,6.8761,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,business_as_usual,SSP3-7.0,2050,6.2502,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,business_as_usual,SSP3-7.0,2080,6.2739,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,business_as_usual,SSP3-7.0,2040,,5.0,4,Extremely High (>80%),True
+P07,Mundra,455700,pessimistic,SSP5-8.5,2030,6.9323,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,pessimistic,SSP5-8.5,2050,6.4572,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,pessimistic,SSP5-8.5,2080,5.4618,5.0,4,Extremely High (>80%),False
+P07,Mundra,455700,pessimistic,SSP5-8.5,2040,,5.0,4,Extremely High (>80%),True
+P09,Durgapur,453145,optimistic,SSP1-2.6,2030,0.884,4.144,4,Extremely High (>80%),False
+P09,Durgapur,453145,optimistic,SSP1-2.6,2050,0.8144,4.0257,4,Extremely High (>80%),False
+P09,Durgapur,453145,optimistic,SSP1-2.6,2080,0.8895,4.153,4,Extremely High (>80%),False
+P09,Durgapur,453145,optimistic,SSP1-2.6,2040,,4.0849,4,Extremely High (>80%),True
+P09,Durgapur,453145,business_as_usual,SSP3-7.0,2030,0.7062,3.8201,3,High (40-80%),False
+P09,Durgapur,453145,business_as_usual,SSP3-7.0,2050,0.7792,3.962,3,High (40-80%),False
+P09,Durgapur,453145,business_as_usual,SSP3-7.0,2080,0.9539,4.2538,4,Extremely High (>80%),False
+P09,Durgapur,453145,business_as_usual,SSP3-7.0,2040,,3.891,3,High (40-80%),True
+P09,Durgapur,453145,pessimistic,SSP5-8.5,2030,0.7219,3.8518,3,High (40-80%),False
+P09,Durgapur,453145,pessimistic,SSP5-8.5,2050,0.7539,3.9144,3,High (40-80%),False
+P09,Durgapur,453145,pessimistic,SSP5-8.5,2080,1.1107,4.4734,4,Extremely High (>80%),False
+P09,Durgapur,453145,pessimistic,SSP5-8.5,2040,,3.8831,3,High (40-80%),True
+P08,Paradip,453210,optimistic,SSP1-2.6,2030,0.2297,2.1998,2,Medium - High (20-40%),False
+P08,Paradip,453210,optimistic,SSP1-2.6,2050,0.206,2.0426,2,Medium - High (20-40%),False
+P08,Paradip,453210,optimistic,SSP1-2.6,2080,0.2048,2.0342,2,Medium - High (20-40%),False
+P08,Paradip,453210,optimistic,SSP1-2.6,2040,,2.1212,2,Medium - High (20-40%),True
+P08,Paradip,453210,business_as_usual,SSP3-7.0,2030,0.2088,2.0621,2,Medium - High (20-40%),False
+P08,Paradip,453210,business_as_usual,SSP3-7.0,2050,0.2095,2.067,2,Medium - High (20-40%),False
+P08,Paradip,453210,business_as_usual,SSP3-7.0,2080,0.2087,2.0614,2,Medium - High (20-40%),False
+P08,Paradip,453210,business_as_usual,SSP3-7.0,2040,,2.0645,2,Medium - High (20-40%),True
+P08,Paradip,453210,pessimistic,SSP5-8.5,2030,0.2233,2.159,2,Medium - High (20-40%),False
+P08,Paradip,453210,pessimistic,SSP5-8.5,2050,0.2126,2.0881,2,Medium - High (20-40%),False
+P08,Paradip,453210,pessimistic,SSP5-8.5,2080,0.2073,2.0517,2,Medium - High (20-40%),False
+P08,Paradip,453210,pessimistic,SSP5-8.5,2040,,2.1236,2,Medium - High (20-40%),True

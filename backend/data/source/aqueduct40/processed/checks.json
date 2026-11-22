@@ -1,0 +1,2316 @@
+{
+ "generated_at": "2026-11-21T11:00:43Z",
+ "passed": 462,
+ "checks": [
+  {
+   "check": "all 9 plants present in baseline",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "all 9 plants present in summary",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "baseline bws_score == clip(log2(raw)+log2(20),0,5)",
+   "ok": true,
+   "detail": "max abs diff 0.0002"
+  },
+  {
+   "check": "P01 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "10.1581 -> 5.0"
+  },
+  {
+   "check": "P01 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P01 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "7.7303 -> 5.0"
+  },
+  {
+   "check": "P01 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P01 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "4.4591 -> 5.0"
+  },
+  {
+   "check": "P01 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P01 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P01 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P01 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "8.9154 -> 5.0"
+  },
+  {
+   "check": "P01 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P01 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "10.8989 -> 5.0"
+  },
+  {
+   "check": "P01 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P01 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "14.1131 -> 5.0"
+  },
+  {
+   "check": "P01 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P01 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P01 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P01 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "9.7865 -> 5.0"
+  },
+  {
+   "check": "P01 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P01 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "7.4879 -> 5.0"
+  },
+  {
+   "check": "P01 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P01 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "10.6456 -> 5.0"
+  },
+  {
+   "check": "P01 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P01 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P01 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P01 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P02 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.3752 -> 2.9077"
+  },
+  {
+   "check": "P02 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.9077 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P02 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.3062 -> 2.6145"
+  },
+  {
+   "check": "P02 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.6145 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P02 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.1871 -> 1.9038"
+  },
+  {
+   "check": "P02 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "1.9038 -> 1"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P02 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.7611 vs 2.7611"
+  },
+  {
+   "check": "P02 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.7611 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P02 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "0.1385 -> 1.4699"
+  },
+  {
+   "check": "P02 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "1.4699 -> 1"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P02 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "0.2362 -> 2.24"
+  },
+  {
+   "check": "P02 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.24 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P02 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "0.3688 -> 2.8828"
+  },
+  {
+   "check": "P02 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.8828 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P02 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "1.8550 vs 1.8549"
+  },
+  {
+   "check": "P02 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "1.8549 -> 1"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P02 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.2878 -> 2.5251"
+  },
+  {
+   "check": "P02 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.5251 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P02 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.3334 -> 2.7373"
+  },
+  {
+   "check": "P02 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.7373 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P02 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.4848 -> 3.2774"
+  },
+  {
+   "check": "P02 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "3.2774 -> 3"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P02 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.6312 vs 2.6312"
+  },
+  {
+   "check": "P02 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.6312 -> 2"
+  },
+  {
+   "check": "P02 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P06 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.639 -> 3.6758"
+  },
+  {
+   "check": "P06 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "3.6758 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P06 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.5792 -> 3.5341"
+  },
+  {
+   "check": "P06 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "3.5341 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P06 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.5916 -> 3.5646"
+  },
+  {
+   "check": "P06 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "3.5646 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P06 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "3.6050 vs 3.6049"
+  },
+  {
+   "check": "P06 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "3.6049 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P06 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "0.5783 -> 3.5318"
+  },
+  {
+   "check": "P06 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "3.5318 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P06 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "0.6002 -> 3.5854"
+  },
+  {
+   "check": "P06 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "3.5854 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P06 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "0.6033 -> 3.5929"
+  },
+  {
+   "check": "P06 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "3.5929 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P06 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "3.5586 vs 3.5586"
+  },
+  {
+   "check": "P06 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "3.5586 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P06 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.5924 -> 3.5666"
+  },
+  {
+   "check": "P06 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "3.5666 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P06 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.597 -> 3.5777"
+  },
+  {
+   "check": "P06 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "3.5777 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P06 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.6099 -> 3.6086"
+  },
+  {
+   "check": "P06 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "3.6086 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P06 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "3.5722 vs 3.5722"
+  },
+  {
+   "check": "P06 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "3.5722 -> 3"
+  },
+  {
+   "check": "P06 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P03 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.2679 -> 2.4217"
+  },
+  {
+   "check": "P03 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.4217 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P03 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.2018 -> 2.0129"
+  },
+  {
+   "check": "P03 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.0129 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P03 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.2231 -> 2.1577"
+  },
+  {
+   "check": "P03 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.1577 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P03 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.2173 vs 2.2173"
+  },
+  {
+   "check": "P03 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.2173 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P03 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "0.2534 -> 2.3414"
+  },
+  {
+   "check": "P03 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.3414 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P03 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "0.2783 -> 2.4766"
+  },
+  {
+   "check": "P03 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.4766 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P03 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "0.2337 -> 2.2247"
+  },
+  {
+   "check": "P03 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.2247 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P03 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.4090 vs 2.409"
+  },
+  {
+   "check": "P03 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.409 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P03 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.3379 -> 2.7566"
+  },
+  {
+   "check": "P03 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.7566 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P03 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.2356 -> 2.2363"
+  },
+  {
+   "check": "P03 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.2363 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P03 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.2136 -> 2.0949"
+  },
+  {
+   "check": "P03 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.0949 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P03 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.4965 vs 2.4965"
+  },
+  {
+   "check": "P03 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.4965 -> 2"
+  },
+  {
+   "check": "P03 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P04 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "2.8321 -> 5.0"
+  },
+  {
+   "check": "P04 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P04 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "2.7108 -> 5.0"
+  },
+  {
+   "check": "P04 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P04 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "2.9 -> 5.0"
+  },
+  {
+   "check": "P04 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P04 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P04 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P04 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "2.9913 -> 5.0"
+  },
+  {
+   "check": "P04 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P04 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "2.9339 -> 5.0"
+  },
+  {
+   "check": "P04 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P04 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "2.7589 -> 5.0"
+  },
+  {
+   "check": "P04 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P04 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P04 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P04 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "3.1587 -> 5.0"
+  },
+  {
+   "check": "P04 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P04 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "3.0279 -> 5.0"
+  },
+  {
+   "check": "P04 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P04 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "3.3477 -> 5.0"
+  },
+  {
+   "check": "P04 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P04 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P04 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P04 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P05 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.3218 -> 2.6862"
+  },
+  {
+   "check": "P05 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.6862 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P05 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.3148 -> 2.6544"
+  },
+  {
+   "check": "P05 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.6544 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P05 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.3321 -> 2.7316"
+  },
+  {
+   "check": "P05 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.7316 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P05 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.6703 vs 2.6703"
+  },
+  {
+   "check": "P05 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.6703 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P05 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "0.2539 -> 2.3443"
+  },
+  {
+   "check": "P05 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.3443 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P05 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "0.4252 -> 3.0881"
+  },
+  {
+   "check": "P05 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "3.0881 -> 3"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P05 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "0.3817 -> 2.9324"
+  },
+  {
+   "check": "P05 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.9324 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P05 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.7162 vs 2.7162"
+  },
+  {
+   "check": "P05 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.7162 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P05 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.2833 -> 2.5023"
+  },
+  {
+   "check": "P05 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.5023 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P05 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.3238 -> 2.6951"
+  },
+  {
+   "check": "P05 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.6951 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P05 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.3444 -> 2.7841"
+  },
+  {
+   "check": "P05 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.7841 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P05 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.5987 vs 2.5987"
+  },
+  {
+   "check": "P05 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.5987 -> 2"
+  },
+  {
+   "check": "P05 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P07 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "7.2424 -> 5.0"
+  },
+  {
+   "check": "P07 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P07 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "5.9174 -> 5.0"
+  },
+  {
+   "check": "P07 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P07 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "5.9279 -> 5.0"
+  },
+  {
+   "check": "P07 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P07 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P07 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P07 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "6.8761 -> 5.0"
+  },
+  {
+   "check": "P07 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P07 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "6.2502 -> 5.0"
+  },
+  {
+   "check": "P07 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P07 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "6.2739 -> 5.0"
+  },
+  {
+   "check": "P07 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P07 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P07 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P07 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "6.9323 -> 5.0"
+  },
+  {
+   "check": "P07 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P07 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "6.4572 -> 5.0"
+  },
+  {
+   "check": "P07 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P07 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "5.4618 -> 5.0"
+  },
+  {
+   "check": "P07 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P07 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "5.0000 vs 5.0"
+  },
+  {
+   "check": "P07 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "5.0 -> 4"
+  },
+  {
+   "check": "P07 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P09 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.884 -> 4.144"
+  },
+  {
+   "check": "P09 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "4.144 -> 4"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P09 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.8144 -> 4.0257"
+  },
+  {
+   "check": "P09 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "4.0257 -> 4"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P09 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.8895 -> 4.153"
+  },
+  {
+   "check": "P09 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "4.153 -> 4"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P09 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "4.0848 vs 4.0849"
+  },
+  {
+   "check": "P09 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "4.0849 -> 4"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P09 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "0.7062 -> 3.8201"
+  },
+  {
+   "check": "P09 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "3.8201 -> 3"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P09 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "0.7792 -> 3.962"
+  },
+  {
+   "check": "P09 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "3.962 -> 3"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P09 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "0.9539 -> 4.2538"
+  },
+  {
+   "check": "P09 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "4.2538 -> 4"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P09 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "3.8910 vs 3.891"
+  },
+  {
+   "check": "P09 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "3.891 -> 3"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P09 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.7219 -> 3.8518"
+  },
+  {
+   "check": "P09 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "3.8518 -> 3"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P09 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.7539 -> 3.9144"
+  },
+  {
+   "check": "P09 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "3.9144 -> 3"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P09 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "1.1107 -> 4.4734"
+  },
+  {
+   "check": "P09 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "4.4734 -> 4"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P09 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "3.8831 vs 3.8831"
+  },
+  {
+   "check": "P09 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "3.8831 -> 3"
+  },
+  {
+   "check": "P09 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P08 optimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.2297 -> 2.1998"
+  },
+  {
+   "check": "P08 optimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.1998 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P08 optimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.206 -> 2.0426"
+  },
+  {
+   "check": "P08 optimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.0426 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P08 optimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.2048 -> 2.0342"
+  },
+  {
+   "check": "P08 optimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.0342 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P08 optimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.1212 vs 2.1212"
+  },
+  {
+   "check": "P08 optimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 optimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.1212 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP1-2.6"
+  },
+  {
+   "check": "P08 business_as_usual 2030 score from raw",
+   "ok": true,
+   "detail": "0.2088 -> 2.0621"
+  },
+  {
+   "check": "P08 business_as_usual 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.0621 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P08 business_as_usual 2050 score from raw",
+   "ok": true,
+   "detail": "0.2095 -> 2.067"
+  },
+  {
+   "check": "P08 business_as_usual 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.067 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P08 business_as_usual 2080 score from raw",
+   "ok": true,
+   "detail": "0.2087 -> 2.0614"
+  },
+  {
+   "check": "P08 business_as_usual 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.0614 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P08 business_as_usual 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.0646 vs 2.0645"
+  },
+  {
+   "check": "P08 business_as_usual 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 business_as_usual 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.0645 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP3-7.0"
+  },
+  {
+   "check": "P08 pessimistic 2030 score from raw",
+   "ok": true,
+   "detail": "0.2233 -> 2.159"
+  },
+  {
+   "check": "P08 pessimistic 2030 category = floor(score)",
+   "ok": true,
+   "detail": "2.159 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P08 pessimistic 2050 score from raw",
+   "ok": true,
+   "detail": "0.2126 -> 2.0881"
+  },
+  {
+   "check": "P08 pessimistic 2050 category = floor(score)",
+   "ok": true,
+   "detail": "2.0881 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P08 pessimistic 2080 score from raw",
+   "ok": true,
+   "detail": "0.2073 -> 2.0517"
+  },
+  {
+   "check": "P08 pessimistic 2080 category = floor(score)",
+   "ok": true,
+   "detail": "2.0517 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P08 pessimistic 2040 = midpoint 2030/2050",
+   "ok": true,
+   "detail": "2.1235 vs 2.1236"
+  },
+  {
+   "check": "P08 pessimistic 2040 flagged estimated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 pessimistic 2040 category = floor(score)",
+   "ok": true,
+   "detail": "2.1236 -> 2"
+  },
+  {
+   "check": "P08 scenario label",
+   "ok": true,
+   "detail": "SSP5-8.5"
+  },
+  {
+   "check": "P01 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P01 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P02 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P06 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P03 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P04 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P05 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P07 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P09 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary bws today",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary rfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary cfr",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary opt 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary opt 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary opt 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary bau 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary bau 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary bau 2050",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary pes 2030",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary pes 2040",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "P08 summary pes 2050",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

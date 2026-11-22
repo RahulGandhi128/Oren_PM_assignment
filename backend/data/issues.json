@@ -1,0 +1,227 @@
+{
+ "generated_at": "2026-11-21T11:00:43Z",
+ "issues": [
+  {
+   "id": "OM-MISSING-EC_Earth3P_HR",
+   "severity": "warning",
+   "title": "EC_Earth3P_HR has no data for 2050",
+   "detail": "EC_Earth3P_HR returns empty values for 2050, so its 2040 window uses 19 years instead of 20. The other models use the full 20 years.",
+   "handling": "Used as is. The missing model-years are dropped for that model only, not filled in.",
+   "source": "openmeteo_climate",
+   "plants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09"
+   ],
+   "models": [
+    "EC_Earth3P_HR"
+   ],
+   "metrics": [
+    "heat_days_40c.2040",
+    "rx1day_mm.2040",
+    "rx1day_change_pct"
+   ]
+  },
+  {
+   "id": "OM-IMPLAUSIBLE-TMAX-NICAM16_8S",
+   "severity": "danger",
+   "title": "NICAM16_8S reports physically implausible temperatures",
+   "detail": "NICAM16_8S reports daily maximum temperatures above 55 \u00b0C (up to 67.2 \u00b0C at Baloda Bazar). India's recorded maximum is 51 \u00b0C. Days above 55 \u00b0C: Chittorgarh 6 days, max 60.3 \u00b0C; Satna 25 days, max 65.7 \u00b0C; Chandrapur 96 days, max 63.1 \u00b0C; Nalgonda 6 days, max 58.5 \u00b0C; Baloda Bazar 31 days, max 67.2 \u00b0C; Durgapur 7 days, max 58.6 \u00b0C.",
+   "handling": "Used as is. Heat figures use the median across all models, which limits the effect of one model running hot. The per-model table on each plant page shows this model's values separately.",
+   "source": "openmeteo_climate",
+   "plants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P06",
+    "P09"
+   ],
+   "models": [
+    "NICAM16_8S"
+   ],
+   "metrics": [
+    "heat_days_40c.today",
+    "heat_days_40c.2040",
+    "heat_series"
+   ]
+  },
+  {
+   "id": "OM-NO-BIAS-CORRECTION",
+   "severity": "warning",
+   "title": "Heat-day counts are not bias-corrected and look high",
+   "detail": "The climate models are not bias-corrected against observations, and Today (2001\u20132020) is model climate, not measured weather. Today's ensemble median of days at or above 40 \u00b0C: Chittorgarh 45.8; Satna 44.9; Chandrapur 53.4; Nalgonda 42.4; Ariyalur 29.1; Baloda Bazar 48.4; Mundra 7.2; Paradip 1.4; Durgapur 24.1. These are likely above what weather stations record. The change from Today to 2040 is more reliable than the absolute counts, because both windows come from the same models.",
+   "handling": "Used as is. Open question for the PM: whether to use observed IMD data for Today (spec section 14).",
+   "source": "openmeteo_climate",
+   "plants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09"
+   ],
+   "models": [],
+   "metrics": [
+    "heat_days_40c.today",
+    "heat_days_40c.2040",
+    "heat_series"
+   ]
+  },
+  {
+   "id": "AQ-APPROX-LOCATION",
+   "severity": "warning",
+   "title": "Water and flood lookups use approximate locations",
+   "detail": "Each plant was matched to its Aqueduct river basin using town-centre coordinates, not exact plant sites. A point near a basin edge can land in the neighbouring basin. The lookup point also differs from the plant register for Satna (1.68 km). If real plant coordinates are available, rerun the lookup with them.",
+   "handling": "Used as is. Basin IDs (pfaf_id, aq30_id) are kept so the match can be checked against the Aqueduct download.",
+   "source": "aqueduct40",
+   "plants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09"
+   ],
+   "models": [],
+   "metrics": [
+    "water_stress.today",
+    "water_stress.2040",
+    "riverine_flood",
+    "coastal_flood"
+   ]
+  },
+  {
+   "id": "AQ-FUTURE-SCORE-DERIVED",
+   "severity": "info",
+   "title": "Future water-stress scores are calculated, and 2040 is estimated",
+   "detail": "For future years Aqueduct gives only the raw stress ratio, not a score. It was converted with Aqueduct's own formula, score = clip(log2(ratio) + log2(20), 0, 5), which reproduces all 9 of today's scores exactly. Aqueduct has no 2040 value, so 2040 is the midpoint of the 2030 and 2050 scores, and its category is the whole-number part of the score. The pipeline re-derived every one of these values (462 checks passed).",
+   "handling": "2040 water stress is labelled Derived. The 2040 horizon uses the business-as-usual scenario (SSP3-7.0).",
+   "source": "aqueduct40",
+   "plants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09"
+   ],
+   "models": [],
+   "metrics": [
+    "water_stress.2040"
+   ]
+  },
+  {
+   "id": "AQ-SCENARIO-SPREAD-P02",
+   "severity": "info",
+   "title": "Satna's 2030 water stress is low in one scenario",
+   "detail": "In 2030, Satna's water-stress score drops to 1.47 under the business-as-usual scenario, but sits at 2.91 (optimistic), 2.53 (pessimistic) under the others. That is what the Aqueduct model gives, not a processing error.",
+   "handling": "Used as is. Horizon uses business-as-usual; the plant page shows all three scenarios side by side.",
+   "source": "aqueduct40",
+   "plants": [
+    "P02"
+   ],
+   "models": [],
+   "metrics": [
+    "water_stress.2040"
+   ]
+  },
+  {
+   "id": "AQ-CATEGORY-RISE-P05",
+   "severity": "info",
+   "title": "Ariyalur moves up a water-stress category in some scenarios",
+   "detail": "Ariyalur is Medium-High today and becomes High in: business-as-usual 2050.",
+   "handling": "Used as is. A category change raises the curtailment days used in the exposure engine (Phase 3).",
+   "source": "aqueduct40",
+   "plants": [
+    "P05"
+   ],
+   "models": [],
+   "metrics": [
+    "water_stress.2040"
+   ]
+  },
+  {
+   "id": "AQ-CATEGORY-RISE-P09",
+   "severity": "info",
+   "title": "Durgapur moves up a water-stress category in some scenarios",
+   "detail": "Durgapur is High today and becomes Extremely High in: optimistic 2030; optimistic 2050.",
+   "handling": "Used as is. A category change raises the curtailment days used in the exposure engine (Phase 3).",
+   "source": "aqueduct40",
+   "plants": [
+    "P09"
+   ],
+   "models": [],
+   "metrics": [
+    "water_stress.2040"
+   ]
+  },
+  {
+   "id": "AQ-CFR-NOT-COASTAL",
+   "severity": "info",
+   "title": "Coastal flood score ignored for plants not marked coastal",
+   "detail": "Aqueduct gives a non-zero coastal flood score to Ariyalur (0.65), Durgapur (1.24), but the plant register marks them as not coastal. The spec applies the coastal hazard only where coastal = Y.",
+   "handling": "Coastal flood set to 0 (Derived, 'not coastal'). The Aqueduct score is still shown on the plant page.",
+   "source": "aqueduct40",
+   "plants": [
+    "P05",
+    "P09"
+   ],
+   "models": [],
+   "metrics": [
+    "coastal_flood"
+   ]
+  },
+  {
+   "id": "AQ-MALFORMED-ROW-P07",
+   "severity": "warning",
+   "title": "Mundra's row in the Aqueduct baseline file is malformed",
+   "detail": "aqueduct40_baseline_plants.csv has 2 more values in Mundra's row than the header has columns (drought is blank, then 'No data', then 4.6738, 4). The drought and overall-water-risk columns are shifted.",
+   "handling": "Drought and overall water risk are not used in v1, so they are left empty for this plant. Water stress and flood columns come before the shift and are unaffected (checked against the summary file).",
+   "source": "aqueduct40",
+   "plants": [
+    "P07"
+   ],
+   "models": [],
+   "metrics": []
+  },
+  {
+   "id": "AQ-SCENARIO-MISMATCH",
+   "severity": "info",
+   "title": "Heat and water stress use different emissions scenarios",
+   "detail": "Heat and heavy rain come from CMIP6 HighResMIP models, which Open-Meteo describes as close to RCP8.5 (high emissions). Water stress for 2040 uses Aqueduct's business-as-usual scenario (SSP3-7.0), as the spec sets out. Aqueduct also offers SSP5-8.5 (pessimistic).",
+   "handling": "Kept as specified. The plant page shows all three Aqueduct scenarios so the difference is visible.",
+   "source": "aqueduct40",
+   "plants": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09"
+   ],
+   "models": [],
+   "metrics": [
+    "water_stress.2040"
+   ]
+  }
+ ]
+}

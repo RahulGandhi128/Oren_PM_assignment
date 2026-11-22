@@ -1,0 +1,353 @@
+{
+ "P01": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.0
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.1
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.0
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.1
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 49.6
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 50.2
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 6,
+   "tmax_max_c": 60.3
+  }
+ },
+ "P02": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.6
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.2
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.2
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.6
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 49.3
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 51.1
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 25,
+   "tmax_max_c": 65.7
+  }
+ },
+ "P03": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 49.7
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.8
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.2
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.7
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 51.5
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 52.0
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 96,
+   "tmax_max_c": 63.1
+  }
+ },
+ "P04": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.5
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.2
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 45.8
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.3
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.6
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 49.7
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 6,
+   "tmax_max_c": 58.5
+  }
+ },
+ "P05": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.9
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 45.0
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 45.6
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.1
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.8
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 45.5
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 54.3
+  }
+ },
+ "P06": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 49.4
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.3
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.3
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.8
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 51.4
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 51.3
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 31,
+   "tmax_max_c": 67.2
+  }
+ },
+ "P07": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.6
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.4
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 44.0
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.2
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 45.9
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 49.9
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 49.7
+  }
+ },
+ "P08": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.1
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.0
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 44.1
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 42.7
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 39.4
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 50.8
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 42.1
+  }
+ },
+ "P09": {
+  "CMCC_CM2_VHR4": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 47.7
+  },
+  "EC_Earth3P_HR": {
+   "years_with_missing_days": [
+    2050
+   ],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 46.3
+  },
+  "FGOALS_f3_H": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 44.8
+  },
+  "HiRAM_SIT_HR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.2
+  },
+  "MPI_ESM1_2_XR": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 48.4
+  },
+  "MRI_AGCM3_2_S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 0,
+   "tmax_max_c": 52.6
+  },
+  "NICAM16_8S": {
+   "years_with_missing_days": [],
+   "days_tmax_above_55c": 7,
+   "tmax_max_c": 58.6
+  }
+ }
+}

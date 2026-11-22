@@ -1,0 +1,8 @@
+{
+  "derived_from": "backend/data/source/plants/nimbus_cement_plants.csv (clinker_shipped_fy2025_26_mt + notes)",
+  "edges": [
+    { "from": "P01", "to": "P07", "clinker_mt": 1.12, "mode": "rail", "basis": "P01 clinker_shipped = 1.12; notes: 'ships clinker to P07 by rail'" },
+    { "from": "P06", "to": "P08", "clinker_mt": 0.68, "mode": "unspecified", "basis": "P06 notes: 'ships clinker to P08 (0.68 Mt)'" },
+    { "from": "P06", "to": "P09", "clinker_mt": 0.60, "mode": "unspecified", "basis": "P06 notes: 'P09 (0.60 Mt)'; 0.68 + 0.60 = P06 clinker_shipped 1.28" }
+  ]
+}

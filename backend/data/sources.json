@@ -1,0 +1,94 @@
+{
+  "sources": [
+    {
+      "id": "plants_csv",
+      "name": "Nimbus Cement plant register (FY2025-26)",
+      "used_for": "Plant locations, type, capacity, output, clinker flows, water source, coastal flag, asset value, revenue",
+      "file": "backend/data/source/plants/nimbus_cement_plants.csv",
+      "provider": "Provided with the brief",
+      "version": "FY2025-26",
+      "accessed": "2026-11-21",
+      "licence": "Provided with the brief",
+      "url": null,
+      "resolution": "Per plant"
+    },
+    {
+      "id": "osm_india",
+      "name": "India national boundary, OpenStreetMap (admin_level 2)",
+      "used_for": "Map outline (simplified to public/geo/india.json by backend/pipeline/build_geo.py)",
+      "file": "backend/data/source/geo/india-osm.json",
+      "provider": "OpenStreetMap contributors",
+      "version": "Extract supplied 2026-11-21",
+      "accessed": "2026-11-21",
+      "licence": "ODbL 1.0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "note": "Includes the full Jammu & Kashmir, Ladakh (incl. Aksai Chin) and Arunachal Pradesh boundary as claimed by India.",
+      "resolution": "National outline, simplified at 0.02\u00b0 (about 2 km)"
+    },
+    {
+      "id": "openmeteo_climate",
+      "name": "Open-Meteo Climate API (CMIP6 HighResMIP)",
+      "used_for": "Days per year with max temperature >= 40 C; annual wettest day (Rx1day) and its change to 2040",
+      "file": "backend/data/source/openmeteo_climate/ (raw/, processed/, manifest.json)",
+      "provider": "Open-Meteo.com",
+      "endpoint": "https://climate-api.open-meteo.com/v1/climate",
+      "variables": [
+        "temperature_2m_max",
+        "precipitation_sum"
+      ],
+      "models": [
+        "CMCC_CM2_VHR4",
+        "FGOALS_f3_H",
+        "HiRAM_SIT_HR",
+        "MRI_AGCM3_2_S",
+        "EC_Earth3P_HR",
+        "MPI_ESM1_2_XR",
+        "NICAM16_8S"
+      ],
+      "period": "1950-01-01 to 2050-12-31, daily",
+      "resolution": "Models 20-51 km, downscaled by Open-Meteo to ~10 km",
+      "scenario": "CMIP6 HighResMIP; per Open-Meteo, 'as close to RCP8.5 as possible within CMIP6' (high-emissions pathway). Single pathway, so no scenario toggle.",
+      "caveat": "Past years are model output, not observations. Values are not bias-corrected.",
+      "accessed": "2026-11-21",
+      "licence": "CC BY 4.0 (attribution: Open-Meteo.com)",
+      "url": "https://open-meteo.com/en/docs/climate-api",
+      "request": "GET https://climate-api.open-meteo.com/v1/climate?latitude={lat}&longitude={lon}&start_date=1950-01-01&end_date=2050-12-31&models=CMCC_CM2_VHR4,FGOALS_f3_H,HiRAM_SIT_HR,MRI_AGCM3_2_S,EC_Earth3P_HR,MPI_ESM1_2_XR,NICAM16_8S&daily=temperature_2m_max,precipitation_sum",
+      "request_log": "backend/data/source/openmeteo_climate/manifest.json (exact URL, time, cost and sha256 per plant)",
+      "version": "Climate API v1, CMIP6 HighResMIP models"
+    },
+    {
+      "id": "aqueduct40",
+      "name": "WRI Aqueduct 4.0",
+      "used_for": "Baseline water stress (today), future water stress 2030/2050 by scenario (2040 interpolated), riverine flood risk, coastal flood risk",
+      "file": "backend/data/source/aqueduct40/ (raw/, processed/)",
+      "provider": "World Resources Institute",
+      "access": "Water Risk Atlas point-analysis API (aqueduct.wri.org/api/analysis), same point-in-basin join as aqueduct-4-0-water-risk-data.zip",
+      "fields": [
+        "bws_raw",
+        "bws_score",
+        "bws_cat",
+        "rfr_raw",
+        "rfr_score",
+        "rfr_cat",
+        "cfr_raw",
+        "cfr_score",
+        "cfr_cat",
+        "pfaf_id",
+        "aq30_id",
+        "string_id"
+      ],
+      "scenarios": {
+        "optimistic": "SSP1-2.6",
+        "business_as_usual": "SSP3-7.0 (used for 2040)",
+        "pessimistic": "SSP5-8.5"
+      },
+      "resolution": "HydroBASINS level 6 sub-basins",
+      "caveat": "Looked up from town-centre coordinates. Future scores computed from raw ratios with Aqueduct's formula; 2040 = midpoint of 2030 and 2050.",
+      "version": "4.0",
+      "accessed": "2026-11-21",
+      "licence": "CC BY 4.0 (World Resources Institute)",
+      "url": "https://www.wri.org/data/aqueduct-global-maps-40-data",
+      "request": "Water Risk Atlas point analysis, aqueduct.wri.org/api/analysis, one call per plant point (exact request not recorded in the supplied files; see raw/aqueduct40_README.md)"
+    }
+  ]
+}

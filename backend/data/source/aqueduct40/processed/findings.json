@@ -1,0 +1,144 @@
+{
+ "lookup_vs_plant_register_km": {
+  "P01": 0.0,
+  "P02": 1.68,
+  "P06": 0.01,
+  "P03": 0.0,
+  "P04": 0.14,
+  "P05": 0.0,
+  "P07": 0.11,
+  "P09": 0.0,
+  "P08": 0.01
+ },
+ "scenario_disagreement": [
+  {
+   "plant_id": "P02",
+   "year": 2030,
+   "scores": {
+    "optimistic": 2.9077,
+    "business_as_usual": 1.4699,
+    "pessimistic": 2.5251
+   },
+   "cats": {
+    "optimistic": 2,
+    "business_as_usual": 1,
+    "pessimistic": 2
+   }
+  },
+  {
+   "plant_id": "P02",
+   "year": 2040,
+   "scores": {
+    "optimistic": 2.7611,
+    "business_as_usual": 1.8549,
+    "pessimistic": 2.6312
+   },
+   "cats": {
+    "optimistic": 2,
+    "business_as_usual": 1,
+    "pessimistic": 2
+   }
+  },
+  {
+   "plant_id": "P05",
+   "year": 2050,
+   "scores": {
+    "optimistic": 2.6544,
+    "business_as_usual": 3.0881,
+    "pessimistic": 2.6951
+   },
+   "cats": {
+    "optimistic": 2,
+    "business_as_usual": 3,
+    "pessimistic": 2
+   }
+  },
+  {
+   "plant_id": "P09",
+   "year": 2030,
+   "scores": {
+    "optimistic": 4.144,
+    "business_as_usual": 3.8201,
+    "pessimistic": 3.8518
+   },
+   "cats": {
+    "optimistic": 4,
+    "business_as_usual": 3,
+    "pessimistic": 3
+   }
+  },
+  {
+   "plant_id": "P09",
+   "year": 2040,
+   "scores": {
+    "optimistic": 4.0849,
+    "business_as_usual": 3.891,
+    "pessimistic": 3.8831
+   },
+   "cats": {
+    "optimistic": 4,
+    "business_as_usual": 3,
+    "pessimistic": 3
+   }
+  },
+  {
+   "plant_id": "P09",
+   "year": 2050,
+   "scores": {
+    "optimistic": 4.0257,
+    "business_as_usual": 3.962,
+    "pessimistic": 3.9144
+   },
+   "cats": {
+    "optimistic": 4,
+    "business_as_usual": 3,
+    "pessimistic": 3
+   }
+  }
+ ],
+ "category_rises_vs_today": [
+  {
+   "plant_id": "P05",
+   "scenario": "business_as_usual",
+   "year": 2050,
+   "from_cat": 2,
+   "to_cat": 3
+  },
+  {
+   "plant_id": "P09",
+   "scenario": "optimistic",
+   "year": 2030,
+   "from_cat": 3,
+   "to_cat": 4
+  },
+  {
+   "plant_id": "P09",
+   "scenario": "optimistic",
+   "year": 2050,
+   "from_cat": 3,
+   "to_cat": 4
+  }
+ ],
+ "cfr_nonzero_but_not_coastal": [
+  "P05",
+  "P09"
+ ],
+ "malformed_rows": {
+  "P07": {
+   "extra_values": [
+    "4.6738",
+    "4"
+   ],
+   "drr_score": "",
+   "drr_cat": "",
+   "w_awr_def_tot_score": "",
+   "w_awr_def_tot_cat": "No data"
+  }
+ },
+ "missing_fields": {
+  "P07": [
+   "drr_score",
+   "drr_cat"
+  ]
+ }
+}

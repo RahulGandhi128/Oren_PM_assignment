@@ -1,0 +1,45 @@
+# --- Node / Next.js
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.openapi.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Python
+.venv/
+.venv-pipeline/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Pipeline scratch (raw downloads in backend/data/source/ ARE committed: they back every number)
+backend/pipeline/.cache*
+openmeteo_fetch_bundle.zip
+
+# --- Tests and tooling output
+playwright-report/
+test-results/
+coverage/
+
+# --- Env and secrets
+.env
+.env*.local
+.vercel
+.claude/settings.local.json
+
+# --- OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# --- Not for a public repo: the recruiter's assessment brief
+Oren PM assessment - Climate risk.docx
